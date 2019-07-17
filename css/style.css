@@ -124,8 +124,9 @@ p{
 ---------------------------------*/
 
 #header_outer{
-	background:#ffffff;
+	background:#652EC7;
 	padding:30px 0px;
+	color: #FFF
 	}
 
 .header_section{
@@ -174,7 +175,7 @@ p{
 .nav ul li a{
 	display:block;
 	font-size:14px;
-	color:#222222;
+	color:#EEEEEE;
 	font-family:'Dosis';
 	text-decoration:none;
 	text-transform:uppercase;
@@ -184,7 +185,7 @@ p{
 	-webkit-transition:all 0.2s ease-in-out;	
 	}
 .nav ul li a:hover{
-	color:#560a86;
+	color:#652EC7;
 	}
 	
 
@@ -204,7 +205,7 @@ p{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-color: #FFF5;
+	background-color: #FFD300;
 	background-blend-mode: overlay;
 
 	}
@@ -233,7 +234,7 @@ p{
 	
 .top_left_cont h3{
 	font-size:16px;
-	color:#560A86;
+	color:#652EC7;
 	margin:0 0 20px 0;
 	text-align:left;
 	font-family:'Lato';
@@ -263,7 +264,7 @@ a.learn_more2{
 	display:block;
 	font-size:16px;
 	color:#ffffff;
-	background:#560a86;
+	background:#652EC7;
 	width:178px;
 	height:46px;
 	line-height:46px;
@@ -309,7 +310,7 @@ a.learn_more2:hover{
 	}
 	
 .service_icon{
-	border:2px solid #F148FB;
+	border:2px solid #652EC7;
 	border-radius:50%;
 	width:90px;
 	height:90px;
@@ -317,15 +318,15 @@ a.learn_more2:hover{
 	}
 	
 .service_icon.icon2{
-	border:2px solid #7122FA;
+	border:2px solid #DE38C8;
 	}
 	
 .service_icon.icon3{
-	border:2px solid #560a86;
+	border:2px solid #652EC7;
 	}
 	
 .service_icon span {
-    background:#F148FB;
+    background:#652EC7;
     border: 3px solid #fff;
     border-radius: 50%;
     display: block;
@@ -333,10 +334,10 @@ a.learn_more2:hover{
     width: 100%;
 }
 .service_icon.icon2 span {
-    background:#7122FA;
+    background:#DE38C8;
 }
 .service_icon.icon3 span{
-    background:#560a86;
+    background:#652EC7;
 	}
 .service_icon i{
 	color: #fff;
@@ -428,7 +429,7 @@ a.learn_more2:hover{
 	}
 	
 a.contact_btn{
-	background:#F148FB;
+	background:#652EC7;
 	text-transform:uppercase;
 	display:block;
 	width:176px;
@@ -515,7 +516,7 @@ a.contact_btn:hover{
 	-webkit-transition:all 0.3s ease-in-out;
 }
 .Portfolio-nav li a:hover{
-	background:#7122FA;
+	background:#DE38C8;
 	color:#fff;
 	text-decoration:none;
 }
@@ -544,7 +545,7 @@ a.contact_btn:hover{
 }
 
 .Portfolio-nav li a.current{
-	background:#7122FA;
+	background:#DE38C8;
 	color:#fff;
 	text-decoration:none;
 }
@@ -619,7 +620,7 @@ img {
 	
 .client_profile h3{
 	font-size:18px;
-	color:#560a86;
+	color:#652EC7;
 	margin:0 0 0 0;
 	}
 	
@@ -866,7 +867,7 @@ img {
 }
 
 .twitter-feed:hover {
-	background: #F148FB;
+	background: #652EC7;
 }
 
 .twitter-feed p{
@@ -934,13 +935,13 @@ img {
 	margin:0px auto 20px;
 	}
 .contact_block_icon.icon2{
-	border-color:#7122FA;
+	border-color:#DE38C8;
 	}
 .contact_block_icon.icon3{
-	border-color:#560a86;
+	border-color:#652EC7;
 	}
 .contact_block_icon span {
-    background: none repeat scroll 0 0 #F148FB;
+    background: none repeat scroll 0 0 #652EC7;
     border: 5px solid #fff;
     border-radius: 50%;
     display: block;
@@ -948,16 +949,16 @@ img {
     width: 100%;
 }	
 .contact_block_icon.icon2{
-	border-color:#7122FA;
+	border-color:#DE38C8;
 	}
 .contact_block_icon.icon2 span{
-	background:#7122FA;
+	background:#DE38C8;
 	}
 .contact_block_icon.icon3{
-	border-color:#560a86;
+	border-color:#652EC7;
 	}
 .contact_block_icon.icon3 span{
-	background:#560a86;
+	background:#652EC7;
 	}
 .contact_block_icon i {
     color: #fff;
@@ -1066,7 +1067,7 @@ img {
 	-webkit-transition:all 0.3s ease-in-out;
 }
 .input-text:focus {
-	border: 1px solid #7122FA;
+	border: 1px solid #DE38C8;
 	outline:0;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
 	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);	
@@ -1084,7 +1085,7 @@ img {
 	width:175px;
 	height:50px;
 	letter-spacing: 0px;
-	background:#7122FA;
+	background:#DE38C8;
 	border-radius:3px;
 	color:#ffffff;
 	font-size:16px;
@@ -1122,7 +1123,7 @@ img {
 	
 .footer_bottom span a{
 	display:inline-block;
-	color:#7122FA;
+	color:#DE38C8;
 	font-size:16px;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
@@ -1233,7 +1234,7 @@ img {
 	}
 	
 	#filters ul li a:hover h5, #filters ul li a.active h5 {
-		background: #7122FA;
+		background: #DE38C8;
     color: #fff;
     text-decoration: none;
 	}

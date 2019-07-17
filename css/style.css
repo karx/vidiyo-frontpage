@@ -184,7 +184,7 @@ p{
 	-webkit-transition:all 0.2s ease-in-out;	
 	}
 .nav ul li a:hover{
-	color:#49b5e7;
+	color:#560a86;
 	}
 	
 
@@ -204,7 +204,8 @@ p{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	
+	background-color: #FFF5;
+	background-blend-mode: overlay;
 
 	}
 	
@@ -232,7 +233,7 @@ p{
 	
 .top_left_cont h3{
 	font-size:16px;
-	color:#f56eab;
+	color:#560A86;
 	margin:0 0 20px 0;
 	text-align:left;
 	font-family:'Lato';
@@ -251,7 +252,7 @@ p{
 	
 .top_left_cont p{
 	font-size:16px;
-	color:#888888;
+	color:#030303;
 	margin:0 0 30px 0;
 	line-height: 26px;
 	font-family:'Lato';
@@ -262,7 +263,7 @@ a.learn_more2{
 	display:block;
 	font-size:16px;
 	color:#ffffff;
-	background:#49b5e7;
+	background:#560a86;
 	width:178px;
 	height:46px;
 	line-height:46px;
@@ -308,7 +309,7 @@ a.learn_more2:hover{
 	}
 	
 .service_icon{
-	border:2px solid #f56eab;
+	border:2px solid #F148FB;
 	border-radius:50%;
 	width:90px;
 	height:90px;
@@ -316,15 +317,15 @@ a.learn_more2:hover{
 	}
 	
 .service_icon.icon2{
-	border:2px solid #7cc576;
+	border:2px solid #7122FA;
 	}
 	
 .service_icon.icon3{
-	border:2px solid #49b5e7;
+	border:2px solid #560a86;
 	}
 	
 .service_icon span {
-    background:#f56eab;
+    background:#F148FB;
     border: 3px solid #fff;
     border-radius: 50%;
     display: block;
@@ -332,10 +333,10 @@ a.learn_more2:hover{
     width: 100%;
 }
 .service_icon.icon2 span {
-    background:#7cc576;
+    background:#7122FA;
 }
 .service_icon.icon3 span{
-    background:#49b5e7;
+    background:#560a86;
 	}
 .service_icon i{
 	color: #fff;
@@ -427,7 +428,7 @@ a.learn_more2:hover{
 	}
 	
 a.contact_btn{
-	background:#f56eab;
+	background:#F148FB;
 	text-transform:uppercase;
 	display:block;
 	width:176px;
@@ -514,7 +515,7 @@ a.contact_btn:hover{
 	-webkit-transition:all 0.3s ease-in-out;
 }
 .Portfolio-nav li a:hover{
-	background:#7cc576;
+	background:#7122FA;
 	color:#fff;
 	text-decoration:none;
 }
@@ -543,7 +544,7 @@ a.contact_btn:hover{
 }
 
 .Portfolio-nav li a.current{
-	background:#7cc576;
+	background:#7122FA;
 	color:#fff;
 	text-decoration:none;
 }
@@ -618,7 +619,7 @@ img {
 	
 .client_profile h3{
 	font-size:18px;
-	color:#49b5e7;
+	color:#560a86;
 	margin:0 0 0 0;
 	}
 	
@@ -865,7 +866,7 @@ img {
 }
 
 .twitter-feed:hover {
-	background: #f56eab;
+	background: #F148FB;
 }
 
 .twitter-feed p{
@@ -933,13 +934,13 @@ img {
 	margin:0px auto 20px;
 	}
 .contact_block_icon.icon2{
-	border-color:#7cc576;
+	border-color:#7122FA;
 	}
 .contact_block_icon.icon3{
-	border-color:#49b5e7;
+	border-color:#560a86;
 	}
 .contact_block_icon span {
-    background: none repeat scroll 0 0 #f56eab;
+    background: none repeat scroll 0 0 #F148FB;
     border: 5px solid #fff;
     border-radius: 50%;
     display: block;
@@ -947,16 +948,16 @@ img {
     width: 100%;
 }	
 .contact_block_icon.icon2{
-	border-color:#7cc576;
+	border-color:#7122FA;
 	}
 .contact_block_icon.icon2 span{
-	background:#7cc576;
+	background:#7122FA;
 	}
 .contact_block_icon.icon3{
-	border-color:#49b5e7;
+	border-color:#560a86;
 	}
 .contact_block_icon.icon3 span{
-	background:#49b5e7;
+	background:#560a86;
 	}
 .contact_block_icon i {
     color: #fff;
@@ -1065,7 +1066,7 @@ img {
 	-webkit-transition:all 0.3s ease-in-out;
 }
 .input-text:focus {
-	border: 1px solid #7cc576;
+	border: 1px solid #7122FA;
 	outline:0;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
 	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);	
@@ -1083,7 +1084,7 @@ img {
 	width:175px;
 	height:50px;
 	letter-spacing: 0px;
-	background:#7cc576;
+	background:#7122FA;
 	border-radius:3px;
 	color:#ffffff;
 	font-size:16px;
@@ -1121,7 +1122,7 @@ img {
 	
 .footer_bottom span a{
 	display:inline-block;
-	color:#7cc576;
+	color:#7122FA;
 	font-size:16px;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
@@ -1232,7 +1233,7 @@ img {
 	}
 	
 	#filters ul li a:hover h5, #filters ul li a.active h5 {
-		background: #7cc576;
+		background: #7122FA;
     color: #fff;
     text-decoration: none;
 	}

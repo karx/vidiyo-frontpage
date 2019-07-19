@@ -1,0 +1,684 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+	<title>Vidiyo</title>
+	<link rel="icon" href="favicon.png" type="image/png">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/linecons.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+	<link
+		href='https://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic'
+		rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet'
+		type='text/css'>
+
+
+	<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function (e) {
+			$('.res-nav_click').click(function () {
+				$('ul.toggle').slideToggle(600)
+			});
+
+			$(document).ready(function () {
+				$(window).bind('scroll', function () {
+					if ($(window).scrollTop() > 0) {
+						$('#header_outer').addClass('fixed');
+					} else {
+						$('#header_outer').removeClass('fixed');
+					}
+				});
+
+			});
+
+
+		});
+
+		function resizeText() {
+			var preferredWidth = 767;
+			var displayWidth = window.innerWidth;
+			var percentage = displayWidth / preferredWidth;
+			var fontsizetitle = 25;
+			var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+			$(".divclass").css("font-size", newFontSizeTitle)
+		}
+	</script>
+</head>
+
+<body>
+
+	<!--Header_section-->
+	<header id="header_outer">
+		<div class="container">
+			<div class="header_section">
+				<div class="logo"><a href="javascript:void(0)"><img src="img/logob.png" alt=""></a></div>
+				<nav class="nav" id="nav">
+					<ul class="toggle">
+						<li><a href="#top_content">Home</a></li>
+						<li><a href="#privacy_policy">Privacy Policy</a></li>
+					</ul>
+					<ul class="">
+						<li><a href="#top_content">Home</a></li>
+						<li><a href="#privacy_policy">Privacy Policy</a></li>
+					</ul>
+				</nav>
+				<a class="res-nav_click animated wobble wow" href="javascript:void(0)"><i class="fa-bars"></i></a>
+			</div>
+		</div>
+	</header>
+	<!--Header_section-->
+
+	<!--Top_content-->
+	<section id="top_content" class="top_cont_outer">
+		<div class="top_cont_inner">
+			<div class="container">
+				<div class="top_content">
+					<div class="row">
+						<div class="col-lg-5 col-sm-7">
+							<div class="top_left_cont flipInY wow animated">
+								<h3>Famous on-demand!</h3>
+								<h2>Get a personalized shoutout</h2>
+								<p> Personalized video shoutouts from your favourite celebrities, musicians, influencers, actors,
+									athletes, dancers, entertainers, gamers, standup comedians.
+
+									<a href="#service" class="learn_more2">Book now</a>
+							</div>
+						</div>
+						<div class="col-lg-7 col-sm-5"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Top_content-->
+
+	<!-- Portfolio -->
+	<section id="Portfolio" class="content">
+
+		<!-- Container -->
+		<div class="container portfolio-title">
+
+			<!-- Section Title -->
+			<div class="section-title">
+				<h2>Portfolio</h2>
+			</div>
+			<!--/Section Title -->
+
+		</div>
+		<!-- Container -->
+
+		<div class="portfolio-top"></div>
+
+		<!-- Portfolio Plus Filters -->
+		<div class="portfolio">
+
+			<!-- Portfolio Filters -->
+			<div id="filters" class="sixteen columns">
+				<ul class="clearfix">
+					<li>
+						<a id="all" href="#" data-filter="*" class="active">
+							<h5>All</h5>
+						</a>
+					</li>
+					<li>
+						<a class="" href="#" data-filter=".Actors">
+							<h5>Actors</h5>
+						</a>
+					</li>
+					<li>
+						<a class="" href="#" data-filter=".Instagram">
+							<h5>Instagram</h5>
+						</a>
+					</li>
+					<li>
+						<a class="" href="#" data-filter=".Youtuber">
+							<h5>Youtuber</h5>
+						</a>
+					</li>
+					<li>
+						<a class="" href="#" data-filter=".Athelete">
+							<h5>Athelete</h5>
+						</a>
+					</li>
+					<li>
+						<a class="" href="#" data-filter=".StandUp">
+							<h5>StandUp</h5>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--/Portfolio Filters -->
+
+			<!-- Portfolio Wrap -->
+			<div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap">
+
+				<!-- Portfolio Item With PrettyPhoto  -->
+				<div
+					style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
+					class="portfolio-item one-four   Actors isotope-item">
+					<div class="portfolio-image"> <img src="img/Gaurav-Gera-as-Chutki.jpg" alt="Gaurav Gera"> </div>
+					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="https://www.gauravgera.com/">
+						<div class="project-overlay">
+							<div class="project-info">
+								<div class="zoom-icon"></div>
+								<h4 class="project-name">Gaurav Gera</h4>
+								<p class="project-categories">Actor</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!--/Portfolio Item With PrettyPhoto  -->
+
+				<!-- Portfolio Item Video Expander  -->
+				<div
+					style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
+					class="portfolio-item one-four  Youtuber isotope-item">
+					<div class="portfolio-image"> <img src="img/amit-bhadana-1.jpg" alt="Amit Bhadana"> </div>
+					<div class="project-overlay">
+						<div class="open-project-link"> <a class="open-project"
+								href="https://www.youtube.com/channel/UC_vcKmg67vjMP7ciLnSxSHQ" title="Open Project"></a> </div>
+						<div class="project-info">
+							<div class="zoom-icon"></div>
+							<h4 class="project-name">Amit Bhadana</h4>
+							<p class="project-categories">Youtuber</p>
+						</div>
+					</div>
+				</div>
+				<!--/Portfolio Item Video Expander  -->
+
+				<!-- Portfolio Item Normal Expander -->
+				<div
+					style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
+					class="portfolio-item one-four  Youtuber Instagram  isotope-item">
+					<div class="portfolio-image"> <img src="img/bbk.jpeg" alt="BBK"> </div>
+					<div class="project-overlay">
+						<div class="open-project-link"> <a class="open-project"
+								href="https://www.youtube.com/channel/UCqwUrj10mAEsqezcItqvwEw" title="Open Project"></a> </div>
+						<div class="project-info">
+							<div class="zoom-icon"></div>
+							<h4 class="project-name">Bhavan Bam</h4>
+							<p class="project-categories">Youtuber</p>
+						</div>
+					</div>
+				</div>
+				<!--/Portfolio Item Normal Expander -->
+
+				<!-- Portfolio Item FullScreen Expander -->
+				<div
+					style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
+					class="portfolio-item one-four   Actors isotope-item">
+					<div class="portfolio-image"> <img src="img/Gaurav-Gera-as-Chutki.jpg" alt="Gaurav Gera"> </div>
+					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="https://www.gauravgera.com/">
+						<div class="project-overlay">
+							<div class="project-info">
+								<div class="zoom-icon"></div>
+								<h4 class="project-name">Gaurav Gera</h4>
+								<p class="project-categories">Actor</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div
+					style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
+					class="portfolio-item one-four   Actors isotope-item">
+					<div class="portfolio-image"> <img src="img/Gaurav-Gera-as-Chutki.jpg" alt="Gaurav Gera"> </div>
+					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="https://www.gauravgera.com/">
+						<div class="project-overlay">
+							<div class="project-info">
+								<div class="zoom-icon"></div>
+								<h4 class="project-name">Gaurav Gera</h4>
+								<p class="project-categories">Actor</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div
+					style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
+					class="portfolio-item one-four   Actors isotope-item">
+					<div class="portfolio-image"> <img src="img/Gaurav-Gera-as-Chutki.jpg" alt="Gaurav Gera"> </div>
+					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="https://www.gauravgera.com/">
+						<div class="project-overlay">
+							<div class="project-info">
+								<div class="zoom-icon"></div>
+								<h4 class="project-name">Gaurav Gera</h4>
+								<p class="project-categories">Actor</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div
+					style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
+					class="portfolio-item one-four   Actors isotope-item">
+					<div class="portfolio-image"> <img src="img/Gaurav-Gera-as-Chutki.jpg" alt="Gaurav Gera"> </div>
+					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="https://www.gauravgera.com/">
+						<div class="project-overlay">
+							<div class="project-info">
+								<div class="zoom-icon"></div>
+								<h4 class="project-name">Gaurav Gera</h4>
+								<p class="project-categories">Actor</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div
+					style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
+					class="portfolio-item one-four   Actors isotope-item">
+					<div class="portfolio-image"> <img src="img/Gaurav-Gera-as-Chutki.jpg" alt="Gaurav Gera"> </div>
+					<a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="https://www.gauravgera.com/">
+						<div class="project-overlay">
+							<div class="project-info">
+								<div class="zoom-icon"></div>
+								<h4 class="project-name">Gaurav Gera</h4>
+								<p class="project-categories">Actor</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+			<!--/Portfolio Wrap -->
+
+		</div>
+		<!--/Portfolio Plus Filters -->
+
+		<div class="portfolio-bottom"></div>
+
+		<!-- Project Page Holder-->
+		<div id="project-page-holder">
+			<div class="clear"></div>
+			<div id="project-page-data"></div>
+		</div>
+		<!--/Project Page Holder-->
+
+	</section>
+	<!--/Portfolio -->
+	<!--Service-->
+	<section id="service">
+		<div class="container">
+			<h2>How it Works</h2>
+			<div class="service_area">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="service_block">
+							<div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa-flash"></i></span> </div>
+							<h3 class="animated fadeInUp wow">Select a celebrity</h3>
+							<p class="animated fadeInDown wow">Pick a Celebrity from our ever-growing list and begin. You can do this
+								by searching for them or browsing our alphabetical directory. Don’t worry; if your favourite celebrity
+								is not on our site, you can help! Just tweet at them with the hashtag #Vidiyo or @Vidiyo and let them
+								know you wish for them to join!.</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="service_block">
+							<div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa-comments"></i></span>
+							</div>
+							<h3 class="animated fadeInUp wow">Receive your Celebrity shoutout Vidiyo!</h3>
+							<p class="animated fadeInDown wow">Sit back and wait for your Vidiyo to arrive. Please be calm as
+								celebrities are very busy. Once complete you will receive your custom video in your DM.
+								After that, you can share however you like.
+
+								Vidiyo make great gifts for all occasions so be creative and enjoy!
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Service-->
+
+	<section id="work_outer">
+		<!--main-section-start-->
+		<div class="top_cont_latest">
+			<div class="container">
+				<h2>Why Vidiyo</h2>
+				<div class="work_section">
+					<div class="row">
+						<div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
+							<div class="service-list">
+								<div class="service-list-col1"> <i class="icon-doc"></i> </div>
+								<div class="service-list-col2">
+									<h3>For all</h3>
+									<p>We noticed that fans who have resources and confidence were able to get autographs and pictures
+										while the shyer fans did not want to bother the celebrities and therefore missed out. We are the
+										resource for those fans.</p>
+								</div>
+							</div>
+							<div class="service-list">
+								<div class="service-list-col1"> <i class="icon-comment"></i> </div>
+								<div class="service-list-col2">
+									<h3>Human connects</h3>
+									<p>With Vidiyo, We decided that we wanted to create a simple pleasure, honest and fair way for fans
+										and celebrities to connect.</p>
+								</div>
+							</div>
+							<div class="service-list">
+								<div class="service-list-col1"> <i class="icon-database"></i> </div>
+								<div class="service-list-col2">
+									<h3>Technology first</h3>
+									<p>With the technology and systems that we have created, we believe that we have achieved this and
+										much more.</p>
+								</div>
+							</div>
+							<div class="service-list">
+								<div class="service-list-col1"> <i class="icon-cog"></i> </div>
+								<div class="service-list-col2">
+									<h3>Sometimes, it is personal</h3>
+									<p>By using Vidiyo, Now fans who have already got an autograph and have met their favourite celebrity,
+										they can now get a 'Personal Video Message' that they can keep forever.</p>
+								</div>
+							</div>
+							<div class="work_bottom"> <span>Are you a talent?</span> <a href="#contact" class="contact_btn">Register
+									Now</a> </div>
+						</div>
+						<figure class="col-lg-6 col-sm-6  text-right wow fadeInUp delay-02s"> </figure>
+					</div>
+				</div>
+			</div>
+			<div class="work_pic">
+					
+				<div class='demo'>
+					<svg xmlns="http://www.w3.org/2000/svg" width="110" height="186" viewBox="0 0 110 186">
+						<path class="background" fill="#fff" fill-rule="evenodd" d="M2 2h106v174H2z" />
+						<g class="page-2" fill-rule="evenodd">
+							<rect width="110" height="186" ry="6" fill="#e3dbdb" />
+							<path
+								d="M54.746 60.062v7.026A18 18 0 0 1 71 85a18 18 0 0 1-3.277 10.34l4.838 5.228A25 25 0 0 0 78 85a25 25 0 0 0-23.254-24.938zm-4 .05A25 25 0 0 0 28 85a25 25 0 0 0 25 25 25 25 0 0 0 16.8-6.525l-4.75-5.133A18 18 0 0 1 53 103a18 18 0 0 1-18-18 18 18 0 0 1 15.746-17.836v-7.05z"
+								class="donut" fill="gray" />
+							<rect width="60" height="4" x="11" y="46" ry="0" fill="gray" />
+							<path
+								d="M12 124v14h62v-14H12zm64 0v14h22v-14H76zM12 140v14h62v-14H12zm64 0v14h22v-14H76zM12 156v14h62.02v-14H12zm64.02 0v14H98v-14H76.02z"
+								fill="#ccc" />
+						</g>
+						<g class="page-1" fill-rule="evenodd">
+							<rect width="102" height="156" x="4" y="12" ry="0" fill="#fff" />
+							<rect width="60" height="4" x="12" y="52" ry="0" fill="gray" />
+							<path fill="#ccc" d="M12 60h86v14H12z" />
+							<rect width="60" height="4" x="12" y="82" ry="0" fill="gray" />
+							<path fill="#ccc" d="M12 90h86v14H12z" />
+							<path fill="#999" d="M12 118h32v14H12z" />
+						</g>
+						<g class="menu" fill-rule="evenodd">
+							<path class="menu-item-1" fill="gray" d="M4 0h102v186H4z" />
+							<g fill="#e6e6e6">
+								<path class="menu-item-1" d="M14 45h82v32H14z" />
+								<path class="menu-item-2" d="M14 85h82v32H14z" />
+								<path class="menu-item-3" d="M14 125h82v32H14z" />
+							</g>
+						</g>
+						<g class="device">
+							<path
+								d="M5.762 0C2.57 0 0 2.57 0 5.762v174.476C0 183.43 2.57 186 5.762 186h98.476c3.192 0 5.762-2.57 5.762-5.762V5.762C110 2.57 107.43 0 104.238 0H5.762zM4 12h102v156H4V12z"
+								fill="#666" fill-rule="evenodd" />
+							<rect width="8.942" height="6.467" x="50.099" y="174.488" ry="3.234" fill="none" stroke="#fff"
+								stroke-width="1.467" />
+						</g>
+						<g class="header" fill-rule="evenodd">
+							<rect width="102" height="22" x="4" y="12" ry="0" fill="#ccc" />
+							<path fill="gray" d="M84 26h16v2H84zM84 22h16v2H84zM84 18h16v2H84z" />
+						</g>
+					</svg>
+				</div>
+				
+			</div>
+			<div class="get-app">
+					<div class="android">
+						<img src="./img/google-play-badge.png" alt="">
+					</div>
+					<div class="ios-badge">
+						<img src="./img/app-store.png" alt="">
+					</div>
+				</div>
+		</div>
+	</section>
+	<section class="twitter-feed">
+		<!--twitter-feed-->
+		<div class="container  animated fadeInDown delay-07s wow">
+			<div class="twitter_bird"><span><i class="fa-twitter"></i></span></div>
+			<p> When you're the underdog, your only option is to make #waves if you want to succeed. How much <br> and how
+				often should you be drinking coffee?</p>
+			<span>About 28 mins ago</span>
+		</div>
+	</section>
+	<!--twitter-feed-end-->
+	<footer class="footer_section" id="contact">
+		<div class="container">
+			<section class="main-section contact" id="contact">
+				<div class="contact_section">
+					<h2>Contact Us</h2>
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="contact_block">
+								<div class="contact_block_icon rollIn animated wow"><span><i class="fa-home"></i></span></div>
+								<span> C-2, Sector 1, <br>
+									Noida, UP, 201301 </span>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="contact_block">
+								<div class="contact_block_icon icon2 rollIn animated wow"><span><i class="fa-phone"></i></span></div>
+								<span> 1-800-BOO-YAHH </span>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="contact_block">
+								<div class="contact_block_icon icon3 rollIn animated wow"><span><i class="fa-pencil"></i></span></div>
+								<span> <a href="mailto:contact@vidiyo.me"> contact@vidiyo.me</a> </span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 wow fadeInLeft">
+						<div class="contact-info-box address clearfix">
+							<h3>Don’t be shy. Say hello!</h3>
+							<p>We believe in delivering happiness to those who deserve them, and work closely with a variety of
+								charities which believe in changing the world and make it a better place. By using Vidyo, you are
+								contributing to bringing smiles to those who need it.</p>
+							<p>We now have many big-name celebrities lined-up ready to use Vidiyo shortly.</p>
+						</div>
+						<ul class="social-link">
+							<li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i
+										class="fa-twitter"></i></a></li>
+							<li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i
+										class="fa-facebook"></i></a></li>
+							<li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i
+										class="fa-pinterest"></i></a></li>
+							<li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i
+										class="fa-google-plus"></i></a></li>
+							<li class="dribbble animated bounceIn wow delay-06s"><a href="javascript:void(0)"><i
+										class="fa-dribbble"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-6 wow fadeInUp delay-06s">
+						<div class="form">
+							<div id="sendmessage">Your message has been sent. Thank you!</div>
+							<div id="errormessage"></div>
+							<form action="" method="post" role="form" class="contactForm">
+								<div class="form-group">
+									<input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name"
+										data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+									<div class="validation"></div>
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email"
+										data-rule="email" data-msg="Please enter a valid email" />
+									<div class="validation"></div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject"
+										data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+									<div class="validation"></div>
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" name="message" rows="5" data-rule="required"
+										data-msg="Please write something for us" placeholder="Message"></textarea>
+									<div class="validation"></div>
+								</div>
+
+								<button type="submit" class="btn input-btn">Request Callback</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container">
+			<div class="footer_bottom">
+				<span>© Vidiyo </span>
+				<div class="credits">
+					<!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Vidiyo
+          -->
+					<div id="footer-info">Made with ♥ <a>Artiosys Ventures</a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		$(document).ready(function (e) {
+			$('#header_outer').scrollToFixed();
+			$('.res-nav_click').click(function () {
+				$('.main-nav').slideToggle();
+				return false
+
+			});
+
+		});
+	</script>
+	<script>
+		wow = new WOW({
+			animateClass: 'animated',
+			offset: 100
+		});
+		wow.init();
+		document.getElementById('').onclick = function () {
+			var section = document.createElement('section');
+			section.className = 'wow fadeInDown';
+			section.className = 'wow shake';
+			section.className = 'wow zoomIn';
+			section.className = 'wow lightSpeedIn';
+			this.parentNode.insertBefore(section, this);
+		};
+	</script>
+	<script type="text/javascript">
+		$(window).load(function () {
+
+			$('a').bind('click', function (event) {
+				var $anchor = $(this);
+
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top - 91
+				}, 1500, 'easeInOutExpo');
+				/*
+				if you don't want to use the easing effects:
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1000);
+				*/
+				event.preventDefault();
+			});
+		})
+	</script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			// Portfolio Isotope
+			var container = $('#portfolio-wrap');
+
+
+			container.isotope({
+				animationEngine: 'best-available',
+				animationOptions: {
+					duration: 200,
+					queue: false
+				},
+				layoutMode: 'fitRows'
+			});
+
+			$('#filters a').click(function () {
+				$('#filters a').removeClass('active');
+				$(this).addClass('active');
+				var selector = $(this).attr('data-filter');
+				container.isotope({
+					filter: selector
+				});
+				setProjects();
+				return false;
+			});
+
+
+			function splitColumns() {
+				var winWidth = $(window).width(),
+					columnNumb = 1;
+
+
+				if (winWidth > 1024) {
+					columnNumb = 4;
+				} else if (winWidth > 900) {
+					columnNumb = 2;
+				} else if (winWidth > 479) {
+					columnNumb = 2;
+				} else if (winWidth < 479) {
+					columnNumb = 1;
+				}
+
+				return columnNumb;
+			}
+
+			function setColumns() {
+				var winWidth = $(window).width(),
+					columnNumb = splitColumns(),
+					postWidth = Math.floor(winWidth / columnNumb);
+
+				container.find('.portfolio-item').each(function () {
+					$(this).css({
+						width: postWidth + 'px'
+					});
+				});
+			}
+
+			function setProjects() {
+				setColumns();
+				container.isotope('reLayout');
+			}
+
+			container.imagesLoaded(function () {
+				setColumns();
+			});
+
+
+			$(window).bind('resize', function () {
+				setProjects();
+			});
+
+		});
+		$(window).load(function () {
+			jQuery('#all').click();
+			return false;
+		});
+	</script>
+	<script src="contactform/contactform.js"></script>
+	<script src="js/custom-kaaro.js"></script>
+</body>
+
+</html>

@@ -2392,7 +2392,7 @@ header {
 
 .dual-btns a {
     margin: 5px 5px;
-    width: 183px;
+    /* width: auto; */
 }
 
 .errormessage p, .statusMessage p, .successmessage p {

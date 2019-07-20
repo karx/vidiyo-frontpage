@@ -84,9 +84,9 @@
 									</li>
 									<li><a class="page-scroll" href="#services">Services</a></li>
 									<li><a class="page-scroll" href="#news-wrap">Latest</a></li>
-									<li><a class="page-scroll" href="#playlist">Stars</a></li>
-									<li><a class="page-scroll" href="#tours">Comics</a></li>
-									<li><a class="page-scroll" href="#albums">Why Vidiyo</a></li>
+									<li><a class="page-scroll" href="#stars">Stars</a></li>
+									<li><a class="page-scroll" href="#comics">Comics</a></li>
+									<li><a class="page-scroll" href="#why">Why Vidiyo</a></li>
 									<li><a class="page-scroll" href="#contact">Contact</a></li>
 								</ul>
 							</nav>
@@ -159,66 +159,32 @@
 						<h2>Latest Vidiyos</h2>
 						<h5>Checkout these latest shoutouts on Vidiyo.!</h5>
 					</div>
+					{% assign news_stars = site.stars | where: "front_type","news" %}
 
 					<section class="news-main" id="news-main">
 						<div class="container">
 							<div class="row">
 								<div id="news-grid">
+									{% for each_news_star in news_stars limit:3 %}
 									<div class="news-item col-md-4">
 										<div class="ni-wrap">
 											<div class="image-cropper-custom">
 
 
-												<img src="images/stars/disha-patani.jpg" class="img-responsive"
+												<img src="{{each_news_star.image_url}}" class="img-responsive"
 													alt="" />
 											</div>
-											<h4><a href="./single-blog-fullwidth.html">Disha Patani - a timeless
-													river</a></h4>
+											<h4><a href="{{each_news_star.url}}">{{each_news_star.name}} - {{each_news_star.excerpt}}</a></h4>
 											<div class="news-meta">
-												<span><i class="fa fa-instagram"></i> 23.1 M Followers</span>
+												<span><i class="fa fa-instagram"></i> {{each_news_star.instagram_number}} Followers</span>
 												<!-- <span><i class="fa fa-user"></i> Admin</span>
-											<span><i class="fa fa-comments"></i> <a href="#">4 Comments</a></span> -->
+													<span><i class="fa fa-comments"></i> <a href="#">4 Comments</a></span> -->
 											</div>
-											<a href="#" class="btn btn-default btn-xs">Book Now</a>
+											<a href="{{each_news_star.url}}" class="btn btn-default btn-xs">Book Now</a>
 										</div>
 									</div>
-									<div class="news-item col-md-4">
-										<div class="ni-wrap ni-custom">
-											<div class="image-cropper-custom">
-
-
-												<img src="images/stars/pannu.jpg" class="img-responsive" alt="" />
-											</div>
-											<h4><a href="./single-blog-fullwidth.html">Taapsee Pannu - Drama
-													personified</a></h4>
-											<div class="news-meta">
-												<span><i class="fa fa-instagram"></i> 12M Followers</span>
-												<!-- <span><i class="fa fa-user"></i> Admin</span>
-									<span><i class="fa fa-comments"></i> <a href="#">4 Comments</a></span> -->
-											</div>
-											<!-- <p>Donec accumsan enim quis metus convallis risus volutpat non. Aenean eu sollicitudin lacus. Ut tristique neque sed nibh aliquam, quis tincidunt nibh posuere. Nulla at mauris libero.</p> -->
-											<a href="#" class="btn btn-default btn-xs">Book Now</a>
-										</div>
-									</div>
-
-									<div class="news-item col-md-4">
-										<div class="ni-wrap">
-											<div class="image-cropper-custom">
-
-
-												<img src="images/stars/rajkumar-rao.jpg" class="img-responsive"
-													alt="" />
-											</div>
-											<h4><a href="./single-blog-fullwidth.html">Rajkumar Rao - Beautiful Life</a>
-											</h4>
-											<div class="news-meta">
-												<span><i class="fa fa-instagram"></i> 2.1M Followers</span>
-												<!-- <span><i class="fa fa-user"></i> Admin</span>
-									<span><i class="fa fa-comments"></i> <a href="#">4 Comments</a></span> -->
-											</div>
-											<a href="#" class="btn btn-default btn-xs">Book Now</a>
-										</div>
-									</div>
+									{% endfor %}
+									
 								</div>
 							</div>
 						</div>
@@ -230,7 +196,7 @@
 
 			<!-- Stars -->
 			<div id="albums">
-				<div class="section-head text-center">
+				<div id="stars" class="section-head text-center">
 					<h2>The Stardom is real</h2>
 					<h5>Want to ask them for a dedicated birthday wish 🎂, or a late anniversary wish 💌 </h5>
 				</div>
@@ -244,6 +210,8 @@
 				</ul> -->
 
 				<div class="album-list-wrap stars-all">
+						{% assign actor_stars = site.stars | where: "front_type","actors" %}
+						{% for each_actor_star in actor_stars limit:8 %}
 
 					<!-- Album Item -->
 					<li class="Actor">
@@ -251,12 +219,12 @@
 						<div class="col-md-3 col-sm-6 album-card-wrap nopadding ">
 							<div class="album-card">
 								<div class="image hoverdir-target custom-star-image-cropper">
-									<img alt="image" src="images/stars/AnanyaPandey.jpg">
+									<img alt="image" src="{{each_actor_star.image_url}}">
 									<div class="overlay">
 										<div class="button-wrapper">
 											<div class="view-button">
-												<a class="link" href="#">
-													<span><strong class="bold">Ananya</strong><br>Pandey</span>
+												<a class="link" href="{{each_actor_star.url}}">
+													<span><strong class="bold">{{each_actor_star.first_name}}</strong><br>{{each_actor_star.last_name}}</span>
 												</a>
 											</div>
 										</div>
@@ -266,152 +234,17 @@
 						</div>
 
 					</li><!-- Album Item -->
-					<li class="Actor">
 
-						<div class="col-md-3 col-sm-6 album-card-wrap nopadding Standup Youtube">
-							<div class="album-card">
-								<div class="image hoverdir-target custom-star-image-cropper">
-									<img alt="image" src="images/stars/Aparashakti-Khurana.jpg">
-									<div class="overlay">
-										<div class="button-wrapper">
-											<div class="view-button">
-												<a class="link" href="#">
-													<span><strong class="bold">Aparashakti</strong><br>Khurana</span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</li><!-- Album Item -->
-					<li class="Actor">
-
-						<div class="col-md-3 col-sm-6 album-card-wrap nopadding Standup Actor">
-							<div class="album-card">
-								<div class="image hoverdir-target custom-star-image-cropper">
-									<img alt="image" src="images/stars/Kartik-Aryan.jpg">
-									<div class="overlay">
-										<div class="button-wrapper">
-											<div class="view-button">
-												<a class="link" href="#">
-													<span><strong class="bold">Kartik</strong><br>Aryan</span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</li><!-- Album Item -->
-					<li>
-
-						<div class="col-md-3 col-sm-6 album-card-wrap nopadding Standup">
-							<div class="album-card">
-								<div class="image hoverdir-target custom-star-image-cropper">
-									<img alt="image" src="images/stars/Kriti-Kharabanda.jpg">
-									<div class="overlay">
-										<div class="button-wrapper">
-											<div class="view-button">
-												<a class="link" href="#">
-													<span><strong class="bold">Kriti</strong><br>Kharabanda</span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</li><!-- Album Item -->
-					<li>
-
-						<div class="col-md-3 col-sm-6 album-card-wrap nopadding Standup">
-							<div class="album-card">
-								<div class="image hoverdir-target custom-star-image-cropper">
-									<img alt="image" src="images/stars/Kunal-Khemu.jpg">
-									<div class="overlay">
-										<div class="button-wrapper">
-											<div class="view-button">
-												<a class="link" href="#">
-													<span><strong class="bold">Kunal</strong><br>Khemu</span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</li><!-- Album Item -->
-					<li>
-
-						<div class="col-md-3 col-sm-6 album-card-wrap nopadding Standup">
-							<div class="album-card">
-								<div class="image hoverdir-target custom-star-image-cropper">
-									<img alt="image" src="images/stars/Neha-Dhupia.jpg">
-									<div class="overlay">
-										<div class="button-wrapper">
-											<div class="view-button">
-												<a class="link" href="#">
-													<span><strong class="bold">Neha</strong><br>Dhupia</span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</li><!-- Album Item -->
-					<li>
-
-						<div class="col-md-3 col-sm-6 album-card-wrap nopadding Standup">
-							<div class="album-card">
-								<div class="image hoverdir-target custom-star-image-cropper ">
-									<img alt="image" src="images/stars/RakulSingh.jpg">
-									<div class="overlay">
-										<div class="button-wrapper">
-											<div class="view-button">
-												<a class="link" href="#">
-													<span><strong class="bold">Rakul</strong><br>Singh</span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</li><!-- Album Item -->
-					<li>
-
-						<div class="col-md-3 col-sm-6 album-card-wrap nopadding Standup">
-							<div class="album-card">
-								<div class="image hoverdir-target custom-star-image-cropper">
-									<img alt="image" src="images/stars/Wamaqui-Gabi.jpg">
-									<div class="overlay">
-										<div class="button-wrapper">
-											<div class="view-button">
-												<a class="link" href="#">
-													<span><strong class="bold">Wamaqui</strong><br>Gabi</span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						{% endfor %}
+					
 				</div>
 			</div>
-			</li>
+			
 			<!-- ALBUMS -->
 
 			<!-- TOURS -->
 			<div id="tours">
-				<div class="container">
+				<div id="why" class="container">
 					<div class="row">
 						<div class="col-md-6">
 							<img src="images/mic.jpg" class="img-responsive" alt="" />
@@ -471,102 +304,32 @@
 
 			<!-- TEAM -->
 			<div id="team-wrap">
-				<div class="container">
+				<div id="comics" class="container">
 					<div class="section-head text-center">
 						<h2>Laugh with 'em</h2>
 						<h5></h5>
 					</div>
+
 					<div class="row">
+							{% assign comic_stars = site.stars | where: "front_type","comic" %}
+							{% for each_comic_star in comic_stars limit:6 %}
+	
 						<div class="col-md-4 team-item">
 							<div class="team_member_wrap">
-								<a href="">
+								<a href="{{each_comic_star.url}}">
 									<div class="team_profile_wrap">
 										<div class="team_profile_pic image-cropper-custom">
-											<img alt="image" src="images/stars/comic__sunil_grover.jpg">
+											<img alt="image" src="{{each_comic_star.image_url}}">
 										</div>
 										<div class="team_profile_ttl">
-											<h3>Sunil Grover</h3>
-											<h4>Comic</h4>
+											<h3>{{each_comic_star.name}}</h3>
+											<h4>{{each_comic_star.excerpt}}</h4>
 										</div>
 									</div>
 								</a>
 							</div>
 						</div>
-						<div class="col-md-4 team-item">
-							<div class="team_member_wrap">
-								<a href="">
-									<div class="team_profile_wrap">
-										<div class="team_profile_pic image-cropper-custom">
-											<img alt="image" src="images/stars/comic_bbk.jpg">
-										</div>
-										<div class="team_profile_ttl">
-											<h3>Bhuvan Bam</h3>
-											<h4>The Man</h4>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-md-4 team-item">
-							<div class="team_member_wrap">
-								<a href="">
-									<div class="team_profile_wrap">
-										<div class="team_profile_pic image-cropper-custom">
-											<img alt="image" src="images/stars/comic_prjakta_kohli.jpg">
-										</div>
-										<div class="team_profile_ttl">
-											<h3>Prajakta Kohli</h3>
-											<h4>Youtuber</h4>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-md-4 team-item">
-							<div class="team_member_wrap">
-								<a href="">
-									<div class="team_profile_wrap">
-										<div class="team_profile_pic image-cropper-custom">
-											<img alt="image" src="images/stars/comic_vir-das.jpg">
-										</div>
-										<div class="team_profile_ttl">
-											<h3>Vir Das</h3>
-											<h4>Machine</h4>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-md-4 team-item">
-							<div class="team_member_wrap">
-								<a href="">
-									<div class="team_profile_wrap">
-										<div class="team_profile_pic image-cropper-custom">
-											<img alt="image" src="images/stars/comic_abish_mathew.jpg">
-										</div>
-										<div class="team_profile_ttl">
-											<h3>Abish Mathew</h3>
-											<h4>Portable Laughter</h4>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-md-4 team-item">
-							<div class="team_member_wrap">
-								<a href="">
-									<div class="team_profile_wrap">
-										<div class="team_profile_pic image-cropper-custom">
-											<img alt="image" src="images/stars/comic_kenny_sebastian.jpg">
-										</div>
-										<div class="team_profile_ttl">
-											<h3>Kenny Sebastian</h3>
-											<h4>Boy</h4>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
+						{% endfor %}
 					</div>
 				</div>
 			</div>

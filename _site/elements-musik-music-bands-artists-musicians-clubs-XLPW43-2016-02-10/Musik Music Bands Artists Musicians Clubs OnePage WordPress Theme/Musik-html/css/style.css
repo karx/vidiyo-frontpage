@@ -923,7 +923,7 @@ header {
 	text-decoration: none;
 	text-align: center;
 	margin: 0px auto;
-	width: 170px;
+	width: 100px;
 	height: 100px;
 	padding: 12px;
 	border-radius: 50%;
@@ -1077,8 +1077,8 @@ header {
 	margin-left: 20px;
 	display: inline-block;
 	font-weight: 300;
-	/* margin-top: 7px; */
-	font-size: 26px;
+	margin-top: 7px;
+	font-size: 22px;
 	color: #FFF;
 }
 
@@ -1088,7 +1088,6 @@ header {
 }
 
 .tour-ticket {
-	margin-top:5px; 
 	margin-left: 54px;
 	display: block;
 }
@@ -2392,7 +2391,7 @@ header {
 
 .dual-btns a {
     margin: 5px 5px;
-    /* width: auto; */
+    width: 183px;
 }
 
 .errormessage p, .statusMessage p, .successmessage p {
@@ -2809,92 +2808,4 @@ header {
 }
 
 
-}
-
-.image-cropper-custom {
-	max-height: 35vh;
-	overflow: hidden;
-}
-
-.custom-star-image-cropper {
-	max-height: 55vh;
-	overflow: hidden;
-}
-.pinky-desc {
-	color: #FF00A4;
-}
-.deadmause-link :hover {
-	color: #39FF14;
-}
-.deadmause-desc {
-	color: #39FF14;
-}
-.deadmause-desc:hover {
-
-	color: #FF00A4;
-	
-}
-.pinky-desc:hover {
-	color: #39FF14;
-}
-
-.top-profile-icon {
-	padding: 10px;
-}
-#profile-ind form {
-	margin-top: 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-#profile-ind form input {
-	border: none;
-	background: #fff;
-	border-radius: 3px;
-	height: 30px;
-	padding: 0 15px;
-	color: #000;
-	width: 50%;
-	display: block;
-	margin-bottom: 15px;
-}
-
-#profile-ind form textarea {
-	width: 100%;
-	border: none;
-	background: #fff;
-	border-radius: 3px;
-	height: 110px;
-	padding: 10px;
-	color: #000;
-	display: block;
-	margin-bottom: 10px;
-}
-
-#profile-ind form button {
-	border: medium none;
-	font-size: 12px;
-	background: #FF00A4;
-}
-
-#profile-ind form button:hover {
-	color:#fff !important;
-	background: #555;
-}
-
-#profile-ind h3 {
-	color: #fff;
-	margin: 0;
-	font-size: 20px;
-}
-
-#profile-ind p {
-	color: #888;
-	margin-bottom: 16px;
-}
-
-#profile-ind form label {
-	color: #888;
-	font-weight: 200;
-	margin-bottom: 5px;
 }

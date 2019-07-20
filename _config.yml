@@ -190,7 +190,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - liquid_pluralize
   
 
 # mimic GitHub Pages with --safe
@@ -201,7 +200,6 @@ whitelist:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - liquid_pluralize
 
 
 # Archives

@@ -1,4 +1,4 @@
 ---
-title: XXX | Homepage
+title: Vidiyo | Homepage
 layout: default
 ---

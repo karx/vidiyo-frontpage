@@ -2905,9 +2905,9 @@ header {
 }
 
 
-#stars-header {
+.stars-header {
 	padding: 100px 0 10px;
-	background: #000;
+	background: #000 !important;
 }
 
 .stars-detail {

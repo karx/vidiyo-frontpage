@@ -2898,3 +2898,34 @@ header {
 	font-weight: 200;
 	margin-bottom: 5px;
 }
+
+.qoute-main {
+	color: #FF00A4;
+
+}
+
+
+.stars-header {
+	padding: 100px 0 10px;
+	background: #000 !important;
+}
+
+.stars-detail {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+}
+.stars-detail .star-name {
+	font-size: 35px;
+	font-weight: 700;
+	font-family: Montserrat, Sans-serif;
+}
+.star-book-btn {
+		border: medium none;
+		font-size: 14px;
+		background: #FF00A4;
+		color: #FFF;
+		padding: 12px 25px;
+		transition: background-color .3s linear,color .3s linear;
+}

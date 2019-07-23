@@ -8,3 +8,7 @@ image_url: '../images/stars/disha-patani.jpg'
 layout: stars
 front_type: news
 ---
+
+
+## About her
+She is a timeless river. More info on the internet.

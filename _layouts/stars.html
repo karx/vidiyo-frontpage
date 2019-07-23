@@ -106,19 +106,18 @@
 					<div class="row text-center">
 						<div class="col-md-12">
 							<div class="qoute-box">
-								<h3 class="qoute-main">
-									{% if page.qoute %}
-									{{page.qoute }}
-									{% else %}
-									Aap toop ho ... main toh kehta hoon aap Pope ho
-									{% endif %}
+								<h3 id="qoute-main" class="qoute-main">
+									
+									<div class="loading">
+										<div class="loading_dots">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
 								</h3>
-								<h6 class="qoute-by"> -
-									{% if page.qoute_by %}
-									{{page.qoute_by }}
-									{% else %}
-									Ranbir Kapoor (Movie: Ajab Prem Ki Ghazab Kahani)
-									{% endif %}
+								<h6 id="qoute-by" class="qoute-by"> -
+									
 								</h6>
 
 
@@ -320,6 +319,7 @@
 	<script src="../js/custom.js"></script>
 	<script src="../js/custom-kaaro.js"></script>
 	<script src="../js/custom-stars.js"></script>
+	<script src="../js/custom-qoute.js"></script>
 
 </body>
 

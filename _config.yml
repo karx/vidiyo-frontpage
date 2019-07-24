@@ -190,6 +190,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-admin
   
 
 # mimic GitHub Pages with --safe

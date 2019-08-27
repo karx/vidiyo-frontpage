@@ -262,12 +262,25 @@ defaults:
         author_profile: false
         share: true
         related: true
+  # StarCategories
+  - scope:
+      path: "_starcategories"
+      type: starcategories
+    values:
+        layout: single
+        author_profile: false
+        share: true
+        related: true
 
 
 collections:
   stars:
      output: true
      permalink: /stars/:name
+     layout: single
+  starcategories:
+     output: true
+     permalink: /starcategories/:name
      layout: single
   # events:
   #    output: true

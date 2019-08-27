@@ -153,7 +153,7 @@
 			<!-- SERVICES -->
 
 			<!-- NEWS / BLOG -->
-			<div id="news-wrap">
+			<!-- <div id="news-wrap">
 				<div class="container">
 					<div class="section-head text-center">
 						<h2>Latest Vidiyos</h2>
@@ -177,8 +177,8 @@
 											<h4><a href="{{each_news_star.url}}">{{each_news_star.name}} - {{each_news_star.excerpt}}</a></h4>
 											<div class="news-meta">
 												<span><i class="fa fa-instagram"></i> {{each_news_star.instagram_number}} Followers</span>
-												<!-- <span><i class="fa fa-user"></i> Admin</span>
-													<span><i class="fa fa-comments"></i> <a href="#">4 Comments</a></span> -->
+												<!-asd- <span><i class="fa fa-user"></i> Admin</span>
+													<span><i class="fa fa-comments"></i> <a href="#">4 Comments</a></span> -sda->
 											</div>
 											<a href="{{each_news_star.url}}" class="btn btn-default btn-xs">Book Now</a>
 										</div>
@@ -190,7 +190,7 @@
 						</div>
 					</section>
 				</div>
-			</div>
+			</div> -->
 			<!-- NEWS / BLOG -->
 
 
@@ -210,8 +210,9 @@
 				</ul> -->
 
 				<div class="album-list-wrap stars-all">
-						{% assign actor_stars = site.stars | where: "front_type","actors" %}
-						{% for each_actor_star in actor_stars limit:8 %}
+						
+					{% assign star_categories = site.starcategories %}
+					{% for each_star_category in star_categories limit:8 %}
 
 					<!-- Album Item -->
 					<li class="Actor">
@@ -219,12 +220,12 @@
 						<div class="col-md-3 col-sm-6 album-card-wrap nopadding ">
 							<div class="album-card">
 								<div class="image hoverdir-target custom-star-image-cropper">
-									<img alt="image" src="{{each_actor_star.image_url}}">
+									<img alt="image" src="{{each_star_category.image_url}}">
 									<div class="overlay">
 										<div class="button-wrapper">
 											<div class="view-button">
-												<a class="link" href="{{each_actor_star.url}}">
-													<span><strong class="bold">{{each_actor_star.first_name}}</strong><br>{{each_actor_star.last_name}}</span>
+												<a class="link" href="{{each_star_category.url}}">
+													<span><strong class="bold">{{each_star_category.name}}</strong><br></span>
 												</a>
 											</div>
 										</div>
@@ -235,7 +236,8 @@
 
 					</li><!-- Album Item -->
 
-						{% endfor %}
+					{% endfor %}
+						
 					
 				</div>
 			</div>
@@ -301,41 +303,6 @@
 				</div>
 			</div>
 			<!-- TOURS -->
-
-			<!-- TEAM -->
-			<div id="team-wrap">
-				<div id="comics" class="container">
-					<div class="section-head text-center">
-						<h2>Laugh with 'em</h2>
-						<h5></h5>
-					</div>
-
-					<div class="row">
-							{% assign comic_stars = site.stars | where: "front_type","comic" %}
-							{% for each_comic_star in comic_stars limit:6 %}
-	
-						<div class="col-md-4 team-item">
-							<div class="team_member_wrap">
-								<a href="{{each_comic_star.url}}">
-									<div class="team_profile_wrap">
-										<div class="team_profile_pic image-cropper-custom">
-											<img alt="image" src="{{each_comic_star.image_url}}">
-										</div>
-										<div class="team_profile_ttl">
-											<h3>{{each_comic_star.name}}</h3>
-											<h4>{{each_comic_star.excerpt}}</h4>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-			</div>
-			<!-- TEAM -->
-
-			<!-- GALLERY / PORTFOLIO -->
 
 			<!-- CONTACT -->
 			<div id="contact">

@@ -49,6 +49,7 @@
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
 </head>
 
@@ -161,7 +162,7 @@
 						<div class="kaafi-kuch col-lg-8 col-sm-8">
 							<div class="call-to-action">
 								<!-- <a href="#" class="btn btn-default"> Book Ananya Pandey Now</a> -->
-								<button class="btn btn-default" data-toggle="modal" data-target="#myModal"> Book
+								<button  id="get-me-money"  class="btn btn-default" > Book
 									Ananya Pandey Now</button>
 							</div>
 							<div class="review">
@@ -359,7 +360,7 @@
 
 					<!-- Modal body -->
 					<div class="modal-body">
-						<form name="book_form" method="post" data-netlify="true">
+						<form name="book_form"  data-netlify="true">
 							<div class="hidden">
 								<input type="text" name="star" id="star" value="Ananya Pandey">
 							</div>
@@ -419,6 +420,7 @@
 	<script src="../js/custom-kaaro.js"></script>
 	<script src="../js/custom-stars.js"></script>
 	<script src="../js/custom-qoute.js"></script>
+	<script src="../js/custom-payment.js"></script>
 
 </body>
 

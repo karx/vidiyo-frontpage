@@ -7,6 +7,12 @@
 
 <head>
 	{% include head.html %}
+	{% if layout.addon == 'star' %}
+	{% include star_head_addon.html %}
+	{% endif %}
+	{% if layout.addon == 'talent' %}
+	{% include talent_head_addon.html %}
+	{% endif %}
 </head>
 
 <body>

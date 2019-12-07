@@ -7,8 +7,6 @@ const tela   = c1.canvas;
 const canvas = c1.context;
 
 // $("body").append(tela);
-$("#star_wrapper").append(c1.canvas);
-
 
 class Particle{
   constructor(canvas){
@@ -164,4 +162,10 @@ function createCanvas(properties){
     context: context
   }
 }
+
+function init() {
+  $("#star_wrapper").append(c1.canvas);
+}
+
+// init()
 update()

@@ -40,83 +40,15 @@ addon: star
 				</div>
 			</div>
 		</div>
+		<div class="scope-bar">
 
-		<div id="star_wrapper">
-			<div class="top-bar">
-				<div class="container">
-					<div class="row">
-						<div class="guy-image  col-lg-4 col-sm-4">
-							<img src="{{page.image_url}}" class="img-responsive img-star-rep" alt="">
-						</div>
-						<div class="guy-profile  col-lg-8 col-sm-8">
-							<div class="title">
-								<h1>{{page.name}}</h1>
-								<h3>{{page.excerpt}}</h3>
-								<!-- <h3>A N O T H E R <strong>C O D E P E N</strong></h3> -->
-							</div>
-						</div>
-						<div class="guy-details bottom-bar">
-							<div class="container">
-								<div class="row">
-									<div class="left-kaafi col-lg-4 col-sm-4"></div>
-									<div class="kaafi-kuch col-lg-8 col-sm-8">
-										<div class="call-to-action">
-											<!-- <a href="#" class="btn btn-default"> Book {{page.name}} Now</a> -->
-											<button class="btn btn-default" data-toggle="modal" data-target="#myModal"> Book
-												{{page.name}} Now</button>
-										</div>
-										<div class="review">
-			
-											{% assign stars_to_show = 4 | plus: 0 %}
-											{% if page.rating %}
-											{% assign stars_to_show = page.rating | round | plus: 0 %}
-											{% endif %}
-			
-											{% assign stars_to_hide = 5 | minus: stars_to_show %}
-			
-											{% for i in (1..stars_to_show) %}
-											<span class="fa fa-heart checked"></span>
-											{% endfor %}
-											{% for i in (1..stars_to_hide) %}
-											<span class="fa fa-heart"></span>
-											{% endfor %}
-											{{stars_to_show}} Stars
-			
-										</div>
-										<div class="reply-time">
-											Typically responds in 5 days <span class="fa fa-flash"></span>
-										</div>
-			
-										<!-- <div class="tags">
-												<li class="each-tag">Test</li>
-												<li class="each-tag">Test</li>
-											</div> -->
-			
-										<div class="content">
-											{{content | markdownify}}
-										</div>
-									</div>
-								</div>
-							</div>
-			
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="star-profile-left">
-			</div>
-			
-
-			<!--  -->
 		</div>
-
-
-		<hr class="custom-hr">
+		<!-- <hr class="custom-hr"> -->
 
 		<div id="team-wrap">
 			<div id="comics" class="container">
 				<div class="section-head text-center">
-					<h2>Similar logg...</h2>
+					<h2>...</h2>
 					<h5></h5>
 				</div>
 

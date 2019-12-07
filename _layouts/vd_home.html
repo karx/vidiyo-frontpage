@@ -1,5 +1,6 @@
 ---
 layout: default
+addon: home
 ---
 
 <div id="page-top"></div>
@@ -73,29 +74,24 @@ layout: default
 					<h2>Latest Vidiyos</h2>
 					<h5>Checkout these latest shoutouts on Vidiyo.!</h5>
 				</div>
-				{% assign news_stars = site.stars | where: "front_type","news" %}
+				{% assign news_stars = site.vidiyos %}
 
 				<section class="news-main" id="news-main">
 					<div class="container">
 						<div class="row">
 							<div id="news-grid">
-								{% for each_news_star in news_stars limit:3 %}
-								<div class="news-item col-md-4">
+								{% for each_news_star in news_stars limit:4 %}
+								<div class="news-item col-md-3">
 									<div class="ni-wrap">
 										<div class="image-cropper-custom">
 
 
-											<img src="{{each_news_star.image_url}}" class="img-responsive" alt="" />
+											<video src="{{each_news_star.vid_url}}" class="video-autoplay-pusher img-responsive" alt="" loop="true" autoplay="true" muted></video>
 										</div>
-										<h4><a href="{{each_news_star.url}}">{{each_news_star.name}} -
-												{{each_news_star.excerpt}}</a></h4>
-										<div class="news-meta">
-											<span><i class="fa fa-instagram"></i> {{each_news_star.instagram_number}}
-												Followers</span>
-											<!-- <span><i class="fa fa-user"></i> Admin</span>
-													<span><i class="fa fa-comments"></i> <a href="#">4 Comments</a></span> -->
-										</div>
-										<a href="{{each_news_star.url}}" class="btn btn-default btn-xs">Book Now</a>
+										<h4><a href="{{each_news_star.vid_url}}">{{each_news_star.title}} </a> </h4>
+												<h5>{{each_news_star.excerpt}}</h5>
+										
+										<!-- <a href="{{each_news_star.url}}" class="btn btn-default btn-xs">Book Now</a> -->
 									</div>
 								</div>
 								{% endfor %}

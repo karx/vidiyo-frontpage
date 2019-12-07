@@ -262,6 +262,14 @@ defaults:
         author_profile: false
         share: true
         related: true
+  # Vidiyos
+  - scope:
+      path: "_vidiyos"
+      type: vidiyo
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 
 collections:
@@ -269,6 +277,8 @@ collections:
      output: true
      permalink: /stars/:name
      layout: single
+  vidiyos:
+    output: false
   # events:
   #    output: true
   #    permalink: /events/:name

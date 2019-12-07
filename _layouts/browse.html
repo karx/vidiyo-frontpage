@@ -13,33 +13,7 @@ addon: star
 
 
 	<div class="wrapper">
-		<div class="stars-header">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-md-12">
-						<div class="qoute-box">
-							<h3 id="qoute-main" class="qoute-main">
-
-								<div class="loading">
-									<div class="loading_dots">
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
-								</div>
-							</h3>
-							<h6 id="qoute-by" class="qoute-by"> -
-
-							</h6>
-
-
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-		</div>
+		{% include random_qoute.html %}
 		<div class="scope-bar">
 
 		</div>
@@ -79,58 +53,6 @@ addon: star
 		{% include footer.html %}
 		<!-- FOOTER -->
 
-	</div>
-	<div class="modal" id="myModal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-
-				<!-- Modal Header -->
-				<div class="modal-header">
-					<h4 class="modal-title">Book a Vidiyo - from {{page.name}} </h4>
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				</div>
-
-				<!-- Modal body -->
-				<div class="modal-body">
-					<form name="book_form" method="post" data-netlify="true">
-						<div class="hidden">
-							<input type="text" name="star" id="star" value="{{page.name}}">
-						</div>
-						<div class="form-group">
-							<label for="to">Vidiyo dedicated to:</label>
-							<input type="text" class="form-control" id="to" placeholder="Karan">
-						</div>
-						<div class="form-group">
-							<label for="from">from: </label>
-							<input type="text" class="form-control" id="from" placeholder="Arjun">
-						</div>
-						<div class="form-group">
-							<label for="instuctions">What would you like {{page.name}} to say: </label>
-							<textarea type="text" rows="2" class="form-control" name="instructions" id="instructions"
-								placeholder="Karan and me (Arjun) are brothers and have met after a long seperation. Please record our message for a mother letting her know we are coming home soon."></textarea>
-						</div>
-						<div class="form-group">
-							<label for="d_email">Deliver to: </label>
-							<input type="email" class="form-control" name="d_email" id="d_email"
-								placeholder="karan@email.com">
-						</div>
-
-						<div class="form-group form-check">
-							<label class="form-check-label">
-								<input class="form-check-input" type="checkbox"> Make this public
-							</label>
-						</div>
-						<button type="submit" class="btn btn-primary">Book {{page.firt_name}} Now</button>
-					</form>
-				</div>
-
-				<!-- Modal footer -->
-				<div class="modal-footer">
-					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-				</div>
-
-			</div>
-		</div>
 	</div>
 </div>
 

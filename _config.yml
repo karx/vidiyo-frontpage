@@ -294,7 +294,7 @@ collections:
 
 ## Javascript
 head_scripts:
-  - /assets/js/kaaro.js
+  # - /assets/js/kaaro.js
 
 # footer_scripts:
 #   - /assets/vendor/jquery/jquery.min.js

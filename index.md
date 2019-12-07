@@ -1,4 +1,4 @@
 ---
 title: Vidiyo | Homepage
-layout: default
+layout: vd_home
 ---

@@ -2812,7 +2812,7 @@ header {
 }
 
 .image-cropper-custom {
-	max-height: 35vh;
+	/* max-height: 35vh; */
 	overflow: hidden;
 }
 

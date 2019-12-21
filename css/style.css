@@ -797,7 +797,7 @@ input.button:active {
 
 .news-item {
     padding: 5px 15px 30px 15px;
-    height: 600px;
+    /* height: 35vh; */
 }
 
 .ni-wrap h4 {
@@ -2971,4 +2971,13 @@ a-scene {
     top: 0;
     left: 0;
     
+}
+
+#center-marker {
+    position: fixed;
+    top:10px;
+    left:200px;
+    height: 5px;
+    width: 100%;
+    background: red;
 }

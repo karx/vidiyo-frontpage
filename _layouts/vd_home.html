@@ -14,11 +14,54 @@ addon: home
         <a-assets>
             <a-asset-item id="phone" src="assets/gltf/phone-poly/model.gltf">
         </a-assets>
-        <a-gltf-model header-phone src="#phone" position="0 0 -10" scale="5 5 5"></a-gltf-model>
-        <a-entity id="rig" position="-2.5 10 0" rotation="0 0  0">
+        <a-entity header-phone="
+            markers:            target-land-1   |   target-right-2  |   target-left-3   |   target-mid-4;
+            pos_transitions:    -10, 0, -7      |   9, 0, -15       |   -13, 0, -12     |   -5, 0, -2.0;
+            rot_transitions:    0,0,0           |   0,-30,0         |   0,30,0          |   0,0,0;
+            " position="0 0 -10" scale="4 4 4">
+
+            <a-gltf-model src="#phone" position="0.1 -2 1"></a-gltf-model>
+            <!-- <a-box id="targ1" scale="0.1 0.1 0.1" position="-0.1 0 -0.4"></a-box>
+            <a-sphere id="targ2" scale="0.1 0.1 0.1" position="-0.2 -0.4 -0.4"></a-sphere>
+            <a-cone id="targ3" scale="0.1 0.1 0.1" position="-0.3 -0.2 -0.4"></a-cone>  -->
+
+
+        </a-entity>
+
+        <a-entity header-phone="
+            markers:            target-land-1  |   target-right-2   |   target-left-3    |   target-mid-4;
+            pos_transitions:    -20, 0, -7     |   -20, 0, -7       |   -20, 0, -7      |   -2, 0, -2.0;
+            rot_transitions:    0,0,0          |    0,0,0           |   -90,0,90         |   0,0,0;
+            " position="0 0 -10" scale="4 4 4">
+
+            <a-gltf-model src="#phone" position="0.1 -2 1"></a-gltf-model>
+
+        </a-entity>
+
+        <a-entity header-phone="
+            markers:            target-land-1  |   target-left-3    |   target-mid-4;
+            pos_transitions:    0, -20, -7     |   0, -20, -7       |   1, 0, -2.0;
+            rot_transitions:    0,0,0          |   0,0,0            |   0,0,0;
+            " position="0 0 -10" scale="4 4 4">
+
+            <a-gltf-model src="#phone" position="0.1 -2 1"></a-gltf-model>
+
+        </a-entity>
+
+        <a-entity header-phone="
+            markers:            target-land-1  |   target-left-3    |   target-mid-4;
+            pos_transitions:    20, 0, -7      |   20, 0, -7        |   4, 0, -2.0;
+            rot_transitions:    0,0,0          |   0,0,0            |   0,0,0;
+            " position="0 0 -10" scale="4 4 4">
+
+            <a-gltf-model src="#phone" position="0.1 -2 1"></a-gltf-model>
+        </a-entity>
+
+        <a-entity id="rig" position="-2.5 0 0" rotation="0 0  0">
             <a-entity id="camera" camera look-controls wasd-controls></a-entity>
         </a-entity>
     </a-scene>
+    <div id="center-marker"></div>
     <!-- INTRO -->
     <div id="intro">
         <div class="container" id="intro-container">
@@ -30,7 +73,7 @@ addon: home
 						Personalized video shoutouts from your favourite celebrities, musicians, influencers, actors,
 						athletes, dancers, entertainers, gamers, standup comedians.
 					</p> -->
-                <div class="dual-btns" id="download-app" >
+                <div class="dual-btns" id="download-app">
                     <a href="/register-talent.html" class="btn btn-default">Register as talent</a>
                     <a href="/browse.html" class="btn btn-border">Browse talent</a>
                 </div>
@@ -95,7 +138,7 @@ addon: home
                             <div id="news-grid">
                                 {% for each_news_star in news_stars limit:4 %}
                                 <div class="news-item col-md-3">
-                                    <!-- <div class="ni-wrap">
+                                    <div class="ni-wrap">
                                         <div class="image-cropper-custom-2">
 
 
@@ -106,8 +149,8 @@ addon: home
                                         <h4><a href="{{each_news_star.vid_url}}">{{each_news_star.title}} </a> </h4>
                                         <h5>{{each_news_star.excerpt}}</h5>
 
-                                     
-                                    </div> -->
+
+                                    </div>
                                 </div>
                                 {% endfor %}
 
@@ -260,7 +303,7 @@ addon: home
             <div class="container">
                 <div class="col-md-8 col-md-offset-2">
                     <h3>Don't be shy. Say Hello!</h3>
-                    <p><strong>For booking or any other information, fee free to get in touch!</strong></p>
+                    <p><strong>For vidiyo requests or any other information, fee free to get in touch!</strong></p>
                     <form id="contactForm" action="php/contact.php" method="post">
                         <label>Name (required)</label>
                         <input type="text" name="senderName" id="senderName" Required>

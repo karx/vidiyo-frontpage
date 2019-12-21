@@ -14,7 +14,7 @@ addon: home
         <a-assets>
             <a-asset-item id="phone" src="assets/gltf/phone-poly/model.gltf">
         </a-assets>
-        <a-gltf-model header-phone="destination" src="#phone" position="0 0 -1"></a-gltf-model>
+        <a-gltf-model header-phone src="#phone" position="0 0 -1"></a-gltf-model>
         <a-entity id="rig" position="0 1.6 0" rotation="0 0  0">
             <a-entity id="camera" camera look-controls wasd-controls></a-entity>
         </a-entity>
@@ -25,7 +25,7 @@ addon: home
             <div class="col-md-12 text-center header-image-tags">
                 <h3>Get Famous On-demand!</h3>
                 <h2>Get a personalized video</h2>
-                <h1>shoutout</h1>
+                <h1 id="target-land-1">shoutout</h1>
                 <!-- <p>
 						Personalized video shoutouts from your favourite celebrities, musicians, influencers, actors,
 						athletes, dancers, entertainers, gamers, standup comedians.
@@ -48,7 +48,7 @@ addon: home
                     <div class="col-md-6">
                         <div class="icon-box">
                             <i class="play-tv2"></i>
-                            <h3>Select a celebrity</h3>
+                            <h3 id="target-right-2"> Select a celebrity</h3>
                             <p>Pick a Celebrity from our ever-growing list and begin. You can do this by searching for
                                 them or browsing our alphabetical directory. Don’t worry; if your favourite celebrity is
                                 not on our site, you can help! Just tweet at them
@@ -67,7 +67,7 @@ addon: home
                     <div class="col-md-6">
                         <div class="icon-box">
                             <i class="play-vynil"></i>
-                            <h3>Receive your Celebrity shoutout Vidiyo!</h3>
+                            <h3 id="target-left-3">Receive your Celebrity shoutout Vidiyo!</h3>
                             <p>Sit back and wait for your Vidiyo to arrive. Please be calm as celebrities are very busy.
                                 Once complete you will receive your custom video in your DM. After that, you can share
                                 however you like. Vidiyo make great gifts for
@@ -91,7 +91,7 @@ addon: home
 
                 <section class="news-main" id="news-main">
                     <div class="container">
-                        <div class="row">
+                        <div class="row" id="target-mid-4">
                             <div id="news-grid">
                                 {% for each_news_star in news_stars limit:4 %}
                                 <div class="news-item col-md-3">

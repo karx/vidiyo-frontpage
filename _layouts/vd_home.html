@@ -7,112 +7,127 @@ addon: home
 
 <div class="body">
 
-	<!-- HEADER -->
-	{% include header.html %}
-	<!-- HEADER -->
-
-	<!-- INTRO -->
-	<div id="intro">
-		<div class="container" id="intro-container">
-			<div class="col-md-12 text-center header-image-tags">
-				<h3>Get Famous On-demand!</h3>
-				<h2>Get a personalized video</h2>
-				<h1>shoutout</h1>
-				<!-- <p>
+    <!-- HEADER -->
+    {% include header.html %}
+    <!-- HEADER -->
+    <a-scene embedded>
+        <a-assets>
+            <a-asset-item id="phone" src="assets/gltf/phone-poly/model.gltf">
+        </a-assets>
+        <a-gltf-model header-phone="destination" src="#phone" position="0 0 -1"></a-gltf-model>
+        <a-entity id="rig" position="0 1.6 0" rotation="0 0  0">
+            <a-entity id="camera" camera look-controls wasd-controls></a-entity>
+        </a-entity>
+    </a-scene>
+    <!-- INTRO -->
+    <div id="intro">
+        <div class="container" id="intro-container">
+            <div class="col-md-12 text-center header-image-tags">
+                <h3>Get Famous On-demand!</h3>
+                <h2>Get a personalized video</h2>
+                <h1>shoutout</h1>
+                <!-- <p>
 						Personalized video shoutouts from your favourite celebrities, musicians, influencers, actors,
 						athletes, dancers, entertainers, gamers, standup comedians.
 					</p> -->
-				<div class="dual-btns">
-					<a href="/register-talent.html" class="btn btn-default">Register as talent</a>
-					<a href="/browse.html" class="btn btn-border">Browse talent</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- INTRO -->
+                <div class="dual-btns" id="download-app" >
+                    <a href="/register-talent.html" class="btn btn-default">Register as talent</a>
+                    <a href="/browse.html" class="btn btn-border">Browse talent</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- INTRO -->
 
-	<div class="wrapper">
+    <div class="wrapper">
 
-		<!-- SERVICES -->
-		<div id="services">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-md-6">
-						<div class="icon-box">
-							<i class="play-tv2"></i>
-							<h3>Select a celebrity</h3>
-							<p>Pick a Celebrity from our ever-growing list and begin. You can do this
-								by searching for them or browsing our alphabetical directory. Don’t worry; if your
-								favourite celebrity
-								is not on our site, you can help! Just tweet at them with the hashtag #Vidiyo or
-								@Vidiyo and let them
-								know you wish for them to join!</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="icon-box">
-							<i class="play-vynil"></i>
-							<h3>Receive your Celebrity shoutout Vidiyo!</h3>
-							<p>Sit back and wait for your Vidiyo to arrive. Please be calm as
-								celebrities are very busy. Once complete you will receive your custom video in your
-								DM.
-								After that, you can share however you like.
-
-								Vidiyo make great gifts for all occasions so be creative and enjoy!</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<!-- SERVICES -->
-
-		<!-- NEWS / BLOG -->
-		<div id="news-wrap">
-			<div class="container">
-				<div class="section-head text-center">
-					<h2>Latest Vidiyos</h2>
-					<h5>Checkout these latest shoutouts on Vidiyo.!</h5>
-				</div>
-				{% assign news_stars = site.vidiyos %}
-
-				<section class="news-main" id="news-main">
-					<div class="container">
-						<div class="row">
-							<div id="news-grid">
-								{% for each_news_star in news_stars limit:4 %}
-								<div class="news-item col-md-3">
-									<div class="ni-wrap">
-										<div class="image-cropper-custom-2">
+        <!-- SERVICES -->
+        <div id="services">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <div class="icon-box">
+                            <i class="play-tv2"></i>
+                            <h3>Select a celebrity</h3>
+                            <p>Pick a Celebrity from our ever-growing list and begin. You can do this by searching for
+                                them or browsing our alphabetical directory. Don’t worry; if your favourite celebrity is
+                                not on our site, you can help! Just tweet at them
+                                with the hashtag #Vidiyo or @Vidiyo and let them know you wish for them to join!</p>
+                        </div>
+                    </div>
 
 
-											<video src="{{each_news_star.vid_url}}" class="video-autoplay-pusher img-responsive" alt="" loop="true" autoplay="true" muted></video>
-										</div>
-										<h4><a href="{{each_news_star.vid_url}}">{{each_news_star.title}} </a> </h4>
-												<h5>{{each_news_star.excerpt}}</h5>
-										
-										<!-- <a href="{{each_news_star.url}}" class="btn btn-default btn-xs">Book Now</a> -->
-									</div>
-								</div>
-								{% endfor %}
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div class="icon-box">
+                            <i class="play-vynil"></i>
+                            <h3>Receive your Celebrity shoutout Vidiyo!</h3>
+                            <p>Sit back and wait for your Vidiyo to arrive. Please be calm as celebrities are very busy.
+                                Once complete you will receive your custom video in your DM. After that, you can share
+                                however you like. Vidiyo make great gifts for
+                                all occasions so be creative and enjoy!</p>
+                        </div>
+                    </div>
 
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-		<!-- NEWS / BLOG -->
+                </div>
+            </div>
+        </div>
+        <!-- SERVICES -->
+
+        <!-- NEWS / BLOG -->
+        <div id="news-wrap">
+            <div class="container">
+                <div class="section-head text-center">
+                    <h2>Latest Vidiyos</h2>
+                    <h5>Checkout these latest shoutouts on Vidiyo.!</h5>
+                </div>
+                {% assign news_stars = site.vidiyos %}
+
+                <section class="news-main" id="news-main">
+                    <div class="container">
+                        <div class="row">
+                            <div id="news-grid">
+                                {% for each_news_star in news_stars limit:4 %}
+                                <div class="news-item col-md-3">
+                                    <div class="ni-wrap">
+                                        <div class="image-cropper-custom-2">
 
 
-		<!-- Stars -->
-		<div id="albums">
-			<div id="stars" class="section-head text-center">
-				<h2>The Stardom is real</h2>
-				<h5>Want to ask them for a dedicated birthday wish 🎂, or a late anniversary wish 💌 </h5>
-			</div>
+                                            <video src="{{each_news_star.vid_url}}"
+                                                class="video-autoplay-pusher img-responsive" alt="" loop="true"
+                                                autoplay="true" muted></video>
+                                        </div>
+                                        <h4><a href="{{each_news_star.vid_url}}">{{each_news_star.title}} </a> </h4>
+                                        <h5>{{each_news_star.excerpt}}</h5>
 
-			<!-- <ul id="filter-options">
+                                        <!-- <a href="{{each_news_star.url}}" class="btn btn-default btn-xs">Book Now</a> -->
+                                    </div>
+                                </div>
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- NEWS / BLOG -->
+
+
+        <!-- Stars -->
+        <div id="albums">
+            <div id="stars" class="section-head text-center">
+                <h2 id="target">The Stardom is real</h2>
+                <h5>Want to ask them for a dedicated birthday wish 🎂, or a late anniversary wish 💌 </h5>
+            </div>
+
+            <!-- <ul id="filter-options">
 					<li><input type="checkbox" value="Youtube" data-filter_id="Youtube"> Youtube</li>
 					<li><input type="checkbox" value="Actor" data-filter_id="Actor"> Actor</li>
 					<li><input type="checkbox" value="Standup" data-filter_id="Standup"> Standup</li>
@@ -120,169 +135,165 @@ addon: home
 					<li><input type="checkbox" value="filter_yellow" data-filter_id="yellow"> Yellow</li>
 				</ul> -->
 
-			<div class="album-list-wrap stars-all">
-				{% assign actor_stars = site.stars | where: "front_type","actors" %}
-				{% for each_actor_star in actor_stars limit:8 %}
+            <div class="album-list-wrap stars-all">
+                {% assign actor_stars = site.stars | where: "front_type","actors" %}
+                {% for each_actor_star in actor_stars limit:8 %}
 
-				<!-- Album Item -->
-				<li class="Actor">
+                <!-- Album Item -->
+                <li class="Actor">
 
-					<div class="col-md-3 col-sm-6 album-card-wrap nopadding ">
-						<div class="album-card">
-							<div class="image hoverdir-target custom-star-image-cropper">
-								<img alt="image" src="{{each_actor_star.image_url}}">
-								<div class="overlay">
-									<div class="button-wrapper">
-										<div class="view-button">
-											<a class="link" href="{{each_actor_star.url}}">
-												<span><strong
-														class="bold">{{each_actor_star.first_name}}</strong><br>{{each_actor_star.last_name}}</span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+                    <div class="col-md-3 col-sm-6 album-card-wrap nopadding ">
+                        <div class="album-card">
+                            <div class="image hoverdir-target custom-star-image-cropper">
+                                <img alt="image" src="{{each_actor_star.image_url}}">
+                                <div class="overlay">
+                                    <div class="button-wrapper">
+                                        <div class="view-button">
+                                            <a class="link" href="{{each_actor_star.url}}">
+                                                <span><strong
+                                                        class="bold">{{each_actor_star.first_name}}</strong><br>{{each_actor_star.last_name}}</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-				</li><!-- Album Item -->
+                </li>
+                <!-- Album Item -->
 
-				{% endfor %}
+                {% endfor %}
 
-			</div>
-		</div>
+            </div>
+        </div>
 
-		<!-- TOURS -->
-		<div id="tours">
-			<div id="why" class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<img src="images/mic.jpg" class="img-responsive" alt="" />
-					</div>
-					<div class="col-md-6">
-						<div class="col-md-11">
-							<h3>Why Vidiyo</h3>
-							<ul class="tour-list">
-								<li>
-									<div class="tour-date"> <i href="#" class=" play-world "></i> </div>
-									<div class="tour-info"> For all </div>
-									<div class="tour-ticket pinky-desc"> We noticed that fans who have resources and
-										confidence
-										were able to get autographs and pictures
-										while the shyer fans did not want to bother the celebrities and therefore
-										missed out. We are the
-										resource for those fans.
-									</div>
+        <!-- TOURS -->
+        <div id="tours">
+            <div id="why" class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/mic.jpg" class="img-responsive" alt="" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-11">
+                            <h3>Why Vidiyo</h3>
+                            <ul class="tour-list">
+                                <li>
+                                    <div class="tour-date"> <i href="#" class=" play-world "></i> </div>
+                                    <div class="tour-info"> For all </div>
+                                    <div class="tour-ticket pinky-desc"> We noticed that fans who have resources and
+                                        confidence were able to get autographs and pictures while the shyer fans did not
+                                        want to bother the celebrities and therefore missed out. We are the resource for
+                                        those fans.
+                                    </div>
 
-								</li>
-								<li>
-									<div class="tour-date"> <i class="play-user deadmause-link"></i> </div>
-									<div class="tour-info"> Human connects </div>
-									<div class="tour-ticket deadmause-desc"> With Vidiyo, We decided that we wanted
-										to create a
-										simple pleasure, honest and fair way for fans
-										and celebrities to connect.
-									</div>
-								</li>
-								<li>
-									<div class="tour-date"> <i class="play-lab"></i> </div>
-									<div class="tour-info"> Technology first </div>
-									<div class="tour-ticket pinky-desc"> With the technology and systems that we
-										have created,
-										we believe that we have achieved this and
-										much more.
-									</div>
-								</li>
-								<li>
-									<div class="tour-date"> <i class="play-bubble deadmause-link"></i> </div>
-									<div class="tour-info"> Sometimes, it is personal </div>
-									<div class="tour-ticket deadmause-desc"> By using Vidiyo, Now fans who have
-										already got an
-										autograph and have met their favourite celebrity,
-										they can now get a 'Personal Video Message' that they can keep forever.
-									</div>
-								</li>
-							</ul>
+                                </li>
+                                <li>
+                                    <div class="tour-date"> <i class="play-user deadmause-link"></i> </div>
+                                    <div class="tour-info"> Human connects </div>
+                                    <div class="tour-ticket deadmause-desc"> With Vidiyo, We decided that we wanted to
+                                        create a simple pleasure, honest and fair way for fans and celebrities to
+                                        connect.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tour-date"> <i class="play-lab"></i> </div>
+                                    <div class="tour-info"> Technology first </div>
+                                    <div class="tour-ticket pinky-desc"> With the technology and systems that we have
+                                        created, we believe that we have achieved this and much more.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tour-date"> <i class="play-bubble deadmause-link"></i> </div>
+                                    <div class="tour-info"> Sometimes, it is personal </div>
+                                    <div class="tour-ticket deadmause-desc"> By using Vidiyo, Now fans who have already
+                                        got an autograph and have met their favourite celebrity, they can now get a
+                                        'Personal Video Message' that they can keep forever.
+                                    </div>
+                                </li>
+                            </ul>
 
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- TOURS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TOURS -->
 
-		<!-- TEAM -->
-		<div id="team-wrap">
-			<div id="comics" class="container">
-				<div class="section-head text-center">
-					<h2>Laugh with 'em</h2>
-					<h5></h5>
-				</div>
+        <!-- TEAM -->
+        <div id="team-wrap">
+            <div id="comics" class="container">
+                <div class="section-head text-center">
+                    <h2>Laugh with 'em</h2>
+                    <h5></h5>
+                </div>
 
-				<div class="row">
-					{% assign comic_stars = site.stars | where: "front_type","comic" %}
-					{% for each_comic_star in comic_stars limit:6 %}
+                <div class="row">
+                    {% assign comic_stars = site.stars | where: "front_type","comic" %}
+                    {% for each_comic_star in comic_stars limit:6 %}
 
-					<div class="col-md-4 team-item">
-						<div class="team_member_wrap">
-							<a href="{{each_comic_star.url}}">
-								<div class="team_profile_wrap">
-									<div class="team_profile_pic image-cropper-custom">
-										<img alt="image" src="{{each_comic_star.image_url}}">
-									</div>
-									<div class="team_profile_ttl">
-										<h3>{{each_comic_star.name}}</h3>
-										<h4>{{each_comic_star.excerpt}}</h4>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-		<!-- TEAM -->
+                    <div class="col-md-4 team-item">
+                        <div class="team_member_wrap">
+                            <a href="{{each_comic_star.url}}">
+                                <div class="team_profile_wrap">
+                                    <div class="team_profile_pic image-cropper-custom">
+                                        <img alt="image" src="{{each_comic_star.image_url}}">
+                                    </div>
+                                    <div class="team_profile_ttl">
+                                        <h3>{{each_comic_star.name}}</h3>
+                                        <h4>{{each_comic_star.excerpt}}</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- TEAM -->
 
-		<!-- CONTACT -->
-		<div id="contact">
-			<div class="container">
-				<div class="col-md-8 col-md-offset-2">
-					<h3>Don't be shy. Say Hello!</h3>
-					<p><strong>For booking or any other information, fee free to get in touch!</strong></p>
-					<form id="contactForm" action="php/contact.php" method="post">
-						<label>Name (required)</label>
-						<input type="text" name="senderName" id="senderName" Required>
-						<label>Email Address (required)</label>
-						<input type="email" name="senderEmail" id="senderEmail" Required>
-						<label>Subject</label>
-						<input type="text" name="subject" id="subject">
-						<label>Message</label>
-						<textarea name="message" id="message"></textarea>
-						<button class="button large" type="submit">Send</button>
-					</form>
-					<div id="successMessage" class="successmessage">
-						<p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you
-							shortly.</p>
-					</div>
-					<div id="failureMessage" class="errormessage">
-						<p><span class="error-ico"></span> There was a problem sending your message. Please try
-							again.</p>
-					</div>
-					<div id="incompleteMessage" class="statusMessage">
-						<p>Please complete all the fields in the form before sending.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- CONTACT -->
+        <!-- CONTACT -->
+        <div id="contact">
+            <div class="container">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>Don't be shy. Say Hello!</h3>
+                    <p><strong>For booking or any other information, fee free to get in touch!</strong></p>
+                    <form id="contactForm" action="php/contact.php" method="post">
+                        <label>Name (required)</label>
+                        <input type="text" name="senderName" id="senderName" Required>
+                        <label>Email Address (required)</label>
+                        <input type="email" name="senderEmail" id="senderEmail" Required>
+                        <label>Subject</label>
+                        <input type="text" name="subject" id="subject">
+                        <label>Message</label>
+                        <textarea name="message" id="message"></textarea>
+                        <button class="button large" type="submit">Send</button>
+                    </form>
+                    <div id="successMessage" class="successmessage">
+                        <p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you
+                            shortly.
+                        </p>
+                    </div>
+                    <div id="failureMessage" class="errormessage">
+                        <p><span class="error-ico"></span> There was a problem sending your message. Please try again.
+                        </p>
+                    </div>
+                    <div id="incompleteMessage" class="statusMessage">
+                        <p>Please complete all the fields in the form before sending.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTACT -->
 
-		<!-- FOOTER -->
-		{% include footer.html %}
-		<!-- FOOTER -->
+        <!-- FOOTER -->
+        {% include footer.html %}
+        <!-- FOOTER -->
 
-	</div>
+    </div>
 </div>
 
 <!-- Javascript -->

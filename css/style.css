@@ -2948,7 +2948,7 @@ canvas {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -5;
 }
 
 #intro-container {
@@ -2957,4 +2957,17 @@ canvas {
     bottom: 0;
     left: 0;
     /* background: rgba(255,255,255,0.7); */
+}
+
+a-scene {
+    z-index: -2;
+    position: fixed !important;
+    background: transparent !important;
+    /* background: radial-gradient(#04060F, #DDD); */
+    transform-origin: 0 0;
+    width: 100vw !important; 
+    height: 100vh !important;
+    top: 0;
+    left: 0;
+    
 }

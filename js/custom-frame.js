@@ -1,34 +1,4 @@
 
-EasingFunctions = {
-    // no easing, no acceleration
-    linear: function (t) { return t },
-    // accelerating from zero velocity
-    easeInQuad: function (t) { return t*t },
-    // decelerating to zero velocity
-    easeOutQuad: function (t) { return t*(2-t) },
-    // acceleration until halfway, then deceleration
-    easeInOutQuad: function (t) { return t<.5 ? 2*t*t : -1+(4-2*t)*t },
-    // accelerating from zero velocity 
-    easeInCubic: function (t) { return t*t*t },
-    // decelerating to zero velocity 
-    easeOutCubic: function (t) { return (--t)*t*t+1 },
-    // acceleration until halfway, then deceleration 
-    easeInOutCubic: function (t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1 },
-    // accelerating from zero velocity 
-    easeInQuart: function (t) { return t*t*t*t },
-    // decelerating to zero velocity 
-    easeOutQuart: function (t) { return 1-(--t)*t*t*t },
-    // acceleration until halfway, then deceleration
-    easeInOutQuart: function (t) { return t<.5 ? 8*t*t*t*t : 1-8*(--t)*t*t*t },
-    // accelerating from zero velocity
-    easeInQuint: function (t) { return t*t*t*t*t },
-    // decelerating to zero velocity
-    easeOutQuint: function (t) { return 1+(--t)*t*t*t*t },
-    // acceleration until halfway, then deceleration 
-    easeInOutQuint: function (t) { return t<.5 ? 16*t*t*t*t*t : 1+16*(--t)*t*t*t*t }
-  }
-
-
 
 function scriptInit() {
     console.log('In Custom Frame');
@@ -81,6 +51,7 @@ sceneEl.setAttribute('vr-mode-ui','enabled: false');
         var data = this.data;  // Component property values.
         var el = this.el;  // Reference to the component's entity.
         var pos = el.getAttribute('position');
+        var rot = el.getAttribute('rotation') || '0 0 0';
         let t_vh_mid = document.documentElement.clientHeight/2;
         let state_1 = Math.abs(calcMidFromOffsets('target-land-1') - t_vh_mid);
         let state_2 = Math.abs(calcMidFromOffsets('target-right-2') - t_vh_mid);
@@ -92,13 +63,23 @@ sceneEl.setAttribute('vr-mode-ui','enabled: false');
         console.log(minState);
         console.log(possibleState);
         if (Math.abs(minState - state_1) < 0.001) {
-            pos = tinyMoveTo(-1,0,-1, pos);
+            pos = tinyMoveTo(-5,0,-5, pos);
+            rot = tinyMoveTo(0, 20, 0, rot,1);
         } else if (Math.abs(minState - state_2) < 0.001) {
-            pos = tinyMoveTo(0.75,0,-0.75, pos);
+            pos = tinyMoveTo(5,0,-8, pos);
+            rot = tinyMoveTo(0, -40, 0, rot,1);
         } else if (Math.abs(minState - state_3) < 0.001) {
-            pos = tinyMoveTo(-0.75,0,-1.2, pos);
+            pos = tinyMoveTo(-5,0,-4, pos);
+            rot = tinyMoveTo(0, 30, 0, rot,1);
         } else if (Math.abs(minState - state_4) < 0.001) {
-            pos = tinyMoveTo(2,0,-0.1, pos);
+            pos = tinyMoveTo(0,0,-2.2, pos);
+            rot = tinyMoveTo(0, 0, 0, rot,1);
+
+            // pos = tinyMoveTo(2,0,-0.01, pos);
+            // rot = tinyMoveTo(0, 0, 90, rot,1);
+            
+            // rot = tinyMoveTo(0, 900, 0, rot,1);
+            
         } else {
             console.log('no state near, something is wrong');
         }
@@ -127,26 +108,29 @@ sceneEl.setAttribute('vr-mode-ui','enabled: false');
         // }
         
         el.setAttribute('position',pos);
+        el.setAttribute('rotation',rot);
     }
   });
 
- function tinyMoveTo(x,y,z,pos) {
-     pos.x = tinyMoveSingleTo(x,pos.x);
-     pos.y = tinyMoveSingleTo(y,pos.y);
-     pos.z = tinyMoveSingleTo(z,pos.z);
+ function tinyMoveTo(x,y,z,pos, step = 0.01) {
+     pos.x = tinyMoveSingleTo(x,pos.x, step);
+     pos.y = tinyMoveSingleTo(y,pos.y, step);
+     pos.z = tinyMoveSingleTo(z,pos.z, step);
      return pos;
  }
 
- function tinyMoveSingleTo(dest_x, x) {
-     if (Math.abs(x - dest_x) > 0.1) {
+
+ function tinyMoveSingleTo(dest_x, x, step) {
+     if (Math.abs(x - dest_x) > step*2) {
         if(x > dest_x) {
-            x -= 0.01;
+            x -= step;
         } else if (x< dest_x){
-            x += 0.01;
+            x += step;
         }
      }
      return x;
  }
+ 
 
   function calcMidFromOffsets(target) {
     let xlMatch = document.getElementById(target);

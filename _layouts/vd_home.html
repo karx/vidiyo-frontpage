@@ -14,8 +14,8 @@ addon: home
         <a-assets>
             <a-asset-item id="phone" src="assets/gltf/phone-poly/model.gltf">
         </a-assets>
-        <a-gltf-model header-phone src="#phone" position="0 0 -1"></a-gltf-model>
-        <a-entity id="rig" position="0 1.6 0" rotation="0 0  0">
+        <a-gltf-model header-phone src="#phone" position="0 0 -10" scale="5 5 5"></a-gltf-model>
+        <a-entity id="rig" position="-2.5 10 0" rotation="0 0  0">
             <a-entity id="camera" camera look-controls wasd-controls></a-entity>
         </a-entity>
     </a-scene>
@@ -95,7 +95,7 @@ addon: home
                             <div id="news-grid">
                                 {% for each_news_star in news_stars limit:4 %}
                                 <div class="news-item col-md-3">
-                                    <div class="ni-wrap">
+                                    <!-- <div class="ni-wrap">
                                         <div class="image-cropper-custom-2">
 
 
@@ -106,8 +106,8 @@ addon: home
                                         <h4><a href="{{each_news_star.vid_url}}">{{each_news_star.title}} </a> </h4>
                                         <h5>{{each_news_star.excerpt}}</h5>
 
-                                        <!-- <a href="{{each_news_star.url}}" class="btn btn-default btn-xs">Book Now</a> -->
-                                    </div>
+                                     
+                                    </div> -->
                                 </div>
                                 {% endfor %}
 

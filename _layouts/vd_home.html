@@ -7,61 +7,78 @@ addon: home
 
 <div class="body">
 
-    <!-- HEADER -->
+    
     {% include header.html %}
-    <!-- HEADER -->
+    
     <a-scene embedded>
         <a-assets>
             <a-asset-item id="phone" src="assets/gltf/phone-poly/model.gltf">
         </a-assets>
-        <a-entity header-phone="
-            markers:            target-land-1   |   target-right-2  |   target-left-3   |   target-mid-4;
-            pos_transitions:    -10, 0, -7      |   9, 0, -15       |   -13, 0, -12     |   -5, 0, -2.0;
-            rot_transitions:    0,0,0           |   0,-30,0         |   0,30,0          |   0,0,0;
+        <a-entity kaaroEntry>
+            <!-- Tap to Enter -->
+        </a-entity>
+        <a-entity marker-specific-parent="
+            markers:            target-land-1   |   target-right-2  |   target-left-3   |   target-mid-4    |   target-5-why;
+            pos_transitions:    -10, 0, -7      |   9, 0, -15       |   -13, 0, -12     |   -6, 0, -2.0     |   -6, 0, -7;
+            rot_transitions:    0,0,0           |   0,-30,0         |   0,30,0          |   0,0,0           |   0,0,0;
             " position="0 0 -10" scale="4 4 4">
 
             <a-gltf-model src="#phone" position="0.1 -2 1"></a-gltf-model>
-            <!-- <a-box id="targ1" scale="0.1 0.1 0.1" position="-0.1 0 -0.4"></a-box>
-            <a-sphere id="targ2" scale="0.1 0.1 0.1" position="-0.2 -0.4 -0.4"></a-sphere>
-            <a-cone id="targ3" scale="0.1 0.1 0.1" position="-0.3 -0.2 -0.4"></a-cone>  -->
+            <a-sphere color="#F33" radius="0.1"></a-sphere>
+            <a-entity marker-specific-show="marker: target-land-1">
+                <!-- Show Vidiyo Intro Vid -->
+            </a-entity>
 
+            <a-entity marker-specific-show="marker: target-right-2">
+                <!-- Show Options of Celeb Caraousal -->
+            </a-entity>
 
+            <a-entity marker-specific-show="marker: target-left-3">
+                <!-- Show Custom Text Enter -->
+            </a-entity>
+            <a-entity marker-specific-show="marker: target-mid-4">
+                <!-- Show Vidiyo Intro Vid -->
+            </a-entity>
         </a-entity>
 
-        <a-entity header-phone="
-            markers:            target-land-1  |   target-right-2   |   target-left-3    |   target-mid-4;
-            pos_transitions:    -20, 0, -7     |   -20, 0, -7       |   -20, 0, -7      |   -2, 0, -2.0;
-            rot_transitions:    0,0,0          |    0,0,0           |   -90,0,90         |   0,0,0;
+        <a-entity marker-specific-parent="
+            markers:            target-land-1  |   target-right-2   |   target-left-3    |   target-mid-4   |   target-5-why;
+            pos_transitions:    -20, 0, -7     |   -20, 0, -7       |   -20, 0, -7      |   -3, 0, -2.0     |   -7,0,-6 ;
+            rot_transitions:    0,0,0          |    0,0,0           |   -90,0,90         |   0,0,0          |   0, 60, 0 ;
             " position="0 0 -10" scale="4 4 4">
 
             <a-gltf-model src="#phone" position="0.1 -2 1"></a-gltf-model>
+            <a-sphere color="#FF3" radius="0.1"></a-sphere>
 
         </a-entity>
 
-        <a-entity header-phone="
-            markers:            target-land-1  |   target-left-3    |   target-mid-4;
-            pos_transitions:    0, -20, -7     |   0, -20, -7       |   1, 0, -2.0;
-            rot_transitions:    0,0,0          |   0,0,0            |   0,0,0;
+        <a-entity marker-specific-parent="
+            markers:            target-land-1  |   target-left-3    |   target-mid-4    |   target-5-why;
+            pos_transitions:    0, -20, -7     |   0, -20, -7       |   1, 0, -2.0      |   5,0,-7;
+            rot_transitions:    0,0,0          |   0,0,0            |   0,0,0           |   0,-90,0;
             " position="0 0 -10" scale="4 4 4">
 
             <a-gltf-model src="#phone" position="0.1 -2 1"></a-gltf-model>
+            <a-sphere color="#3F3" radius="0.1"></a-sphere>
 
         </a-entity>
 
-        <a-entity header-phone="
-            markers:            target-land-1  |   target-left-3    |   target-mid-4;
-            pos_transitions:    20, 0, -7      |   20, 0, -7        |   4, 0, -2.0;
-            rot_transitions:    0,0,0          |   0,0,0            |   0,0,0;
+        <a-entity marker-specific-parent="
+            markers:            target-land-1  |   target-left-3    |   target-mid-4    | target-5-why;
+            pos_transitions:    20, 0, -7      |   20, 0, -7        |   4, 0, -2.0      |   -6, 0, 5;
+            rot_transitions:    0,0,0          |   0,0,0            |   0,0,0           |   0, 180, 0;
             " position="0 0 -10" scale="4 4 4">
 
             <a-gltf-model src="#phone" position="0.1 -2 1"></a-gltf-model>
+            <a-sphere color="#3FF" radius="0.1"></a-sphere>
+
         </a-entity>
 
-        <a-entity id="rig" position="-2.5 0 0" rotation="0 0  0">
+        <a-entity id="rig" position="-2.5 0 0" rotation="0 0 0">
             <a-entity id="camera" camera look-controls wasd-controls></a-entity>
         </a-entity>
     </a-scene>
-    <div id="center-marker"></div>
+    <!-- <div id="center-marker"></div> -->
     <!-- INTRO -->
     <div id="intro">
         <div class="container" id="intro-container">
@@ -74,8 +91,8 @@ addon: home
 						athletes, dancers, entertainers, gamers, standup comedians.
 					</p> -->
                 <div class="dual-btns" id="download-app">
-                    <a href="/register-talent.html" class="btn btn-default">Register as talent</a>
-                    <a href="/browse.html" class="btn btn-border">Browse talent</a>
+                    <a href="/browse.html" class="header-btn"><img src="/images/app_store_us.svg" alt="Download on Apple Store"></a>
+                    <a href="/register-talent.html" class="header-btn"><img src="/images/Google_Play_Store_badge_EN.svg" alt="Download on Android" srcset=""></a>
                 </div>
             </div>
         </div>
@@ -84,7 +101,7 @@ addon: home
 
     <div class="wrapper">
 
-        <!-- SERVICES -->
+        <!-- Steps 1 And 2 -->
         <div id="services">
             <div class="container">
                 <div class="row text-center">
@@ -106,11 +123,11 @@ addon: home
         <div id="services">
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-md-6"></div>
+                    <div class="col-md-6 emptyforBackground"></div>
                     <div class="col-md-6">
                         <div class="icon-box">
                             <i class="play-vynil"></i>
-                            <h3 id="target-left-3">Receive your Celebrity shoutout Vidiyo!</h3>
+                            <h3 id="target-left-3">Request shoutout Vidiyo!</h3>
                             <p>Sit back and wait for your Vidiyo to arrive. Please be calm as celebrities are very busy.
                                 Once complete you will receive your custom video in your DM. After that, you can share
                                 however you like. Vidiyo make great gifts for
@@ -121,9 +138,9 @@ addon: home
                 </div>
             </div>
         </div>
-        <!-- SERVICES -->
+        
 
-        <!-- NEWS / BLOG -->
+        <!-- Vidiyos Samples -->
         <div id="news-wrap">
             <div class="container">
                 <div class="section-head text-center">
@@ -160,7 +177,7 @@ addon: home
                 </section>
             </div>
         </div>
-        <!-- NEWS / BLOG -->
+        
 
 
         <!-- Stars -->
@@ -211,17 +228,17 @@ addon: home
             </div>
         </div>
 
-        <!-- TOURS -->
+        <!-- Why Vidiyo -->
         <div id="tours">
             <div id="why" class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="images/mic.jpg" class="img-responsive" alt="" />
+                        <!-- <img src="images/mic.jpg" class="img-responsive" alt="" /> -->
                     </div>
                     <div class="col-md-6">
                         <div class="col-md-11">
                             <h3>Why Vidiyo</h3>
-                            <ul class="tour-list">
+                            <ul class="tour-list" id="target-5-why">
                                 <li>
                                     <div class="tour-date"> <i href="#" class=" play-world "></i> </div>
                                     <div class="tour-info"> For all </div>
@@ -263,40 +280,7 @@ addon: home
                 </div>
             </div>
         </div>
-        <!-- TOURS -->
-
-        <!-- TEAM -->
-        <div id="team-wrap">
-            <div id="comics" class="container">
-                <div class="section-head text-center">
-                    <h2>Laugh with 'em</h2>
-                    <h5></h5>
-                </div>
-
-                <div class="row">
-                    {% assign comic_stars = site.stars | where: "front_type","comic" %}
-                    {% for each_comic_star in comic_stars limit:6 %}
-
-                    <div class="col-md-4 team-item">
-                        <div class="team_member_wrap">
-                            <a href="{{each_comic_star.url}}">
-                                <div class="team_profile_wrap">
-                                    <div class="team_profile_pic image-cropper-custom">
-                                        <img alt="image" src="{{each_comic_star.image_url}}">
-                                    </div>
-                                    <div class="team_profile_ttl">
-                                        <h3>{{each_comic_star.name}}</h3>
-                                        <h4>{{each_comic_star.excerpt}}</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <!-- TEAM -->
+        
 
         <!-- CONTACT -->
         <div id="contact">

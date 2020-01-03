@@ -615,7 +615,9 @@ header {
     height: 40%;
     width: 100%;
 }
-
+.dual-btns {
+    margin-top: 20px;
+}
 .dual-btns a {
     margin: 0 5px;
 }
@@ -1039,7 +1041,7 @@ input.button:active {
 /* 9. TOURS */
 
 #tours {
-    background: #000;
+    /* background: #000; */
     padding: 80px 0px 0;
     display: table;
     margin: 0 auto;
@@ -2980,4 +2982,8 @@ a-scene {
     height: 5px;
     width: 100%;
     background: red;
+}
+
+.header-btn img{
+    height: 72px;
 }

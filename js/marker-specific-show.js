@@ -1,13 +1,18 @@
 
-AFRAME.registerComponent('marker-specific-parent', {
+AFRAME.registerComponent('marker-specific-show', {
     schema: {
         marker: { type: 'string', default: '' },
         current_marker: { type: 'string', default: '_' },
-        rot_transitions: { type: 'string', default: '' }
+        rot_transitions: { type: 'string', default: '' },
+        dev: {type: 'boolean', default: false}
     },
     multiple: true,
 
     init: function () {
+        console.log(this.data.dev);
+        if (this.data.dev) {
+            this.el.setAttribute("visible",false);
+        }
         console.log(`Event Specific for ${this.data.marker} `);
     },
 
@@ -16,7 +21,7 @@ AFRAME.registerComponent('marker-specific-parent', {
         var el = this.el;  // Reference to the component's entity.
         console.log(`Child data: ${data}`);
         console.log(`Current Marker Data from DOM: ${this.el.getAttribute('current_marker')}`);
-        
+
         if (data.marker == data.current_marker) {
             // This will log the `message` when the entity emits the `event`.
             el.setAttribute("visible",true);

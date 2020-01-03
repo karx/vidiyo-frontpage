@@ -38,7 +38,7 @@ AFRAME.registerComponent('marker-specific-parent', {
     },
 
     tick: function () {
-        console.log('tiickng');
+        // console.log('tiickng');
         var data = this.data;  // Component property values.
         var el = this.el;  // Reference to the component's entity.
         var pos = el.getAttribute('position');
@@ -47,7 +47,7 @@ AFRAME.registerComponent('marker-specific-parent', {
         let t_vh_mid = document.documentElement.clientHeight * (0.5 + directionalOffset);
         let markers_ids = data.markers.split('|').map(x => x.trim());
 
-        console.log(`Marker Count = ${markers_ids.length}`);
+        // console.log(`Marker Count = ${markers_ids.length}`);
 
 
         let markers_distances = markers_ids.map((x) => { return (Math.abs(calcMidFromOffsets(x) - t_vh_mid)) });
@@ -57,7 +57,7 @@ AFRAME.registerComponent('marker-specific-parent', {
 
         let minState = Math.min(...markers_distances);
 
-        console.log(`Distances = ${markers_distances} | MIN = ${minState}`);
+        // console.log(`Distances = ${markers_distances} | MIN = ${minState}`);
 
         for (let i = 0; i < markers_distances.length; i++) {
             let eachMarkerDistance = markers_distances[i];

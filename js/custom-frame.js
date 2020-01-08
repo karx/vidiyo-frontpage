@@ -67,7 +67,7 @@ AFRAME.registerComponent('marker-specific-parent', {
                 pos = tinyMoveTo(posOfMarker[0], posOfMarker[1], posOfMarker[2], pos, 0.3);
 
                 rotOfMarker = data.rot_transitions.split('|')[i].trim().split(',');
-                rot = tinyMoveTo(rotOfMarker[0], rotOfMarker[1], rotOfMarker[2], rot, 2, 3);
+                rot = tinyMoveTo(rotOfMarker[0], rotOfMarker[1], rotOfMarker[2], rot, 5, 3);
 
                 if(this.last_state_index !== i) {
                     this.last_state_index = i;

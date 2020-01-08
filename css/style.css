@@ -79,7 +79,7 @@ a {
 }
 
 a:hover {
-    color: #FF00A4;
+    color: #ED3C9C;
     transition: .4s
 }
 
@@ -457,7 +457,7 @@ header {
 .sf-menu ul li:hover {}
 
 .sf-menu ul li a:hover {
-    color: #FF00A4;
+    color: #ED3C9C;
 }
 
 .sf-mega-section span a {
@@ -502,7 +502,7 @@ header {
 }
 
 .sf-menu>li>a:hover {
-    color: #FF00A4 !important;
+    color: #ED3C9C !important;
 }
 
 .sf-menu>li:hover {
@@ -552,8 +552,8 @@ header {
 }
 
 .tp-social a:hover {
-    color: #FF00A4;
-    border-color: #FF00A4;
+    color: #ED3C9C;
+    border-color: #ED3C9C;
 }
 
 
@@ -663,13 +663,13 @@ header {
 
 .btn-default:hover {
     background: transparent;
-    color: #FF00A4;
-    border-color: #FF00A4;
+    color: #ED3C9C;
+    border-color: #ED3C9C;
 }
 
 .btn-default {
-    background: #FF00A4;
-    border: 2px solid #FF00A4;
+    background: #ED3C9C;
+    border: 2px solid #ED3C9C;
     color: #fff;
     padding: 14px 33px;
 }
@@ -687,8 +687,8 @@ header {
 
 .btn-border:hover {
     background: transparent;
-    border: 2px solid #FF00A4;
-    color: #FF00A4;
+    border: 2px solid #ED3C9C;
+    color: #ED3C9C;
 }
 
 .button.large {
@@ -706,7 +706,7 @@ input.button {
     -webkit-border-radius: .333em;
     -moz-border-radius: .333em;
     border-radius: .333em;
-    background-color: #FF00A4;
+    background-color: #ED3C9C;
     color: #FFF !important;
     text-decoration: none !important;
     text-transform: uppercase;
@@ -771,7 +771,7 @@ input.button:active {
 }
 
 .icon-box i {
-    color: #FF00A4;
+    color: #ED3C9C;
     font-size: 60px;
 }
 
@@ -819,10 +819,11 @@ input.button:active {
     text-transform: uppercase;
     font-size: 19px;
     letter-spacing: 1px;
+    color:#FFF;
 }
 
 .ni-wrap p {
-    color: #777;
+    color: #D9D9D9;
     font-size: 12px;
     line-height: 20px;
     padding-bottom: 17px;
@@ -848,7 +849,7 @@ input.button:active {
 }
 
 .news-meta span a {
-    color: #FF00A4;
+    color: #ED3C9C;
 }
 
 
@@ -884,7 +885,7 @@ input.button:active {
 }
 
 .jp-volume-bar-value {
-    background: #FF00A4;
+    background: #ED3C9C;
 }
 
 
@@ -975,7 +976,7 @@ input.button:active {
 }
 
 .album-list-wrap .album-card .image .overlay .button-wrapper .view-button .link:hover span {
-    color: #FF00A4;
+    color: #ED3C9C;
 }
 
 .album-list-wrap .album-card .image .overlay .button-wrapper .view-button .link span {
@@ -1014,7 +1015,7 @@ input.button:active {
 
 .album-list-wrap .album-card .title h4 {
     font-size: 14px;
-    color: #FF00A4;
+    color: #ED3C9C;
     margin: 0;
     font-weight: 700;
     text-transform: uppercase;
@@ -1122,7 +1123,7 @@ input.button:active {
 }
 
 .tour-info a {
-    color: #FF00A4;
+    color: #ED3C9C;
     font-size: 18px;
 }
 
@@ -1133,7 +1134,7 @@ input.button:active {
 }
 
 .tour-ticket a {
-    color: #FF00A4;
+    color: #ED3C9C;
     text-transform: uppercase;
     font-family: Montserrat;
     letter-spacing: 1px;
@@ -1290,7 +1291,7 @@ input.button:active {
 }
 
 #portfolio .item .caption i {
-    background: #FF00A4;
+    background: #ED3C9C;
     color: #fff;
     font-size: 15px;
     padding: 0 !important;
@@ -1308,7 +1309,7 @@ input.button:active {
 }
 
 #portfolio .item:hover .caption i {
-    background: #FF00A4;
+    background: #ED3C9C;
     color: #fff;
     font-size: 20px;
     padding: 0 !important;
@@ -1440,7 +1441,7 @@ input.button:active {
 #contact form button {
     border: medium none;
     font-size: 14px;
-    background: #FF00A4;
+    background: #ED3C9C;
 }
 
 #contact form button:hover {
@@ -1502,11 +1503,11 @@ input.button:active {
     top: 35px;
     font-size: 75px;
     opacity: 1;
-    color: #FF00A4;
+    color: #ED3C9C;
 }
 
 #tweecool ul li a {
-    color: #FF00A4;
+    color: #ED3C9C;
 }
 
 #tweecool+.btn-default {
@@ -1978,7 +1979,7 @@ input.button:active {
     left: 0;
     top: 0;
     width: 4px;
-    background: #FF00A4;
+    background: #ED3C9C;
 }
 
 .widget ul {
@@ -2815,23 +2816,23 @@ input.button:active {
 }
 
 .pinky-desc {
-    color: #FF00A4;
+    color: #ED3C9C;
 }
 
 .deadmause-link :hover {
-    color: #39FF14;
+    color: #3D949C;
 }
 
 .deadmause-desc {
-    color: #39FF14;
+    color: #3D949C;
 }
 
 .deadmause-desc:hover {
-    color: #FF00A4;
+    color: #ED3C9C;
 }
 
 .pinky-desc:hover {
-    color: #39FF14;
+    color: #3D949C;
 }
 
 .top-profile-icon {
@@ -2872,7 +2873,7 @@ input.button:active {
 #profile-ind form button {
     border: medium none;
     font-size: 12px;
-    background: #FF00A4;
+    background: #ED3C9C;
 }
 
 #profile-ind form button:hover {
@@ -2898,7 +2899,7 @@ input.button:active {
 }
 
 .qoute-main {
-    color: #FF00A4;
+    color: #ED3C9C;
 }
 
 .stars-header {
@@ -2921,7 +2922,7 @@ input.button:active {
 .star-book-btn {
     border: medium none;
     font-size: 14px;
-    background: #FF00A4;
+    background: #ED3C9C;
     color: #FFF;
     padding: 12px 25px;
     transition: background-color .3s linear, color .3s linear;
@@ -2929,7 +2930,7 @@ input.button:active {
 
 .header-image-tags h3 {
     font-family: Montserrat, Sans-serif;
-    color: #EDEDEB;
+    color: #FFFFFF;
     text-decoration: underline;
     text-transform: uppercase;
     font-weight: 100;
@@ -2938,7 +2939,7 @@ input.button:active {
 
 .header-image-tags h2 {
     font-family: Montserrat, Sans-serif !important;
-    color: #F8007D;
+    color: #E72662;
     text-transform: uppercase;
     font-weight: 200;
     font-size: 3.9rem;
@@ -2947,7 +2948,7 @@ input.button:active {
 
 .header-image-tags h1 {
     font-family: Montserrat, Sans-serif !important;
-    color: #07EDF2 !important;
+    color: #3D9497 !important;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 7.23rem;

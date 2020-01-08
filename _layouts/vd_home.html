@@ -21,7 +21,7 @@ addon: home
         <a-entity marker-specific-parent="
             markers:            target-land-1   |   target-right-2  |   target-left-3   |   target-mid-4    |   target-5-why;
             pos_transitions:    -10, 0, -7      |   9, 0, -15       |   -13, 0, -12     |   -6, 0, -2.0     |   -6, 0, -7;
-            rot_transitions:    0,0,0           |   0,-30,0         |   0,30,0          |   0,0,0           |   0,0,0;
+            rot_transitions:    0,0,0           |   0,330,0         |   0,30,0          |   0,0,0           |   0,0,0;
             " position="0 0 -10" scale="4 4 4">
 
             <a-gltf-model src="#phone" position="0.1 -2 1"></a-gltf-model>
@@ -166,7 +166,7 @@ addon: home
                                                 class="video-autoplay-pusher img-responsive" alt="" loop="true"
                                                 autoplay="true" muted></video>
                                         </div>
-                                        <h4><a href="{{each_news_star.vid_url}}">{{each_news_star.title}} </a> </h4>
+                                        <h4>{{each_news_star.title}}</h4>
                                         <h5>{{each_news_star.excerpt}}</h5>
 
 

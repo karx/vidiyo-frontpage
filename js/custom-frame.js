@@ -108,7 +108,10 @@ function tinyMoveSingleTo(dest_x, x, step, lc) {
 
 function calcMidFromOffsets(target) {
     let xlMatch = document.getElementById(target);
-
+    if(!xlMatch) {
+        console.log(`Got Null on target search: ${target}`);
+        return 100000;
+    }
     var viewportOffset = xlMatch.getBoundingClientRect();
     // these are relative to the viewport, i.e. the window
     var top = viewportOffset.top;

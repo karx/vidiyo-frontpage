@@ -102,7 +102,7 @@ addon: home
     <div class="wrapper">
 
         <!-- Steps 1 And 2 -->
-        <div id="services">
+        <div id="servicesA">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-6">
@@ -120,7 +120,7 @@ addon: home
                 </div>
             </div>
         </div>
-        <div id="services">
+        <div id="servicesB">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-6 emptyforBackground"></div>
@@ -143,8 +143,8 @@ addon: home
         <!-- Vidiyos Samples -->
         <div id="news-wrap">
             <div class="container">
-                <div class="section-head text-center">
-                    <h2>Latest Vidiyos</h2>
+                <div class="section-head text-center receive-vidiyo-header">
+                    <h2>Receive Vidiyos</h2>
                     <h5>Checkout these latest shoutouts on Vidiyo.!</h5>
                 </div>
                 {% assign news_stars = site.vidiyos %}
@@ -186,14 +186,6 @@ addon: home
                 <h2 id="target">The Stardom is real</h2>
                 <h5>Want to ask them for a dedicated birthday wish 🎂, or a late anniversary wish 💌 </h5>
             </div>
-
-            <!-- <ul id="filter-options">
-					<li><input type="checkbox" value="Youtube" data-filter_id="Youtube"> Youtube</li>
-					<li><input type="checkbox" value="Actor" data-filter_id="Actor"> Actor</li>
-					<li><input type="checkbox" value="Standup" data-filter_id="Standup"> Standup</li>
-					<li><input type="checkbox" value="filter_orange" data-filter_id="orange"> Orange</li>
-					<li><input type="checkbox" value="filter_yellow" data-filter_id="yellow"> Yellow</li>
-				</ul> -->
 
             <div class="album-list-wrap stars-all">
                 {% assign actor_stars = site.stars | where: "front_type","actors" %}

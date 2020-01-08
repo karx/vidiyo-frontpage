@@ -636,6 +636,9 @@ header {
     /* background: #fff; */
     position: relative;
     z-index: 555;
+
+    scroll-snap-type: y mandatory;
+
 }
 
 #okplayer {
@@ -754,8 +757,16 @@ input.button:active {
 
 /* 5. SERVICES */
 
-#services {
+#servicesA {
     padding: 100px 0 100px;
+    scroll-snap-align: start;
+    /* background: #000; */
+}
+
+
+#servicesB {
+    /* padding: 100px 0 100px; */
+    scroll-snap-align: start;
     /* background: #000; */
 }
 
@@ -795,6 +806,7 @@ input.button:active {
 
 #news-wrap {
     padding: 80px 0 100px;
+    scroll-snap-align: start;
 }
 
 .news-item {
@@ -2986,4 +2998,12 @@ a-scene {
 
 .header-btn img{
     height: 72px;
+}
+
+.receive-vidiyo-header h2 {
+    color: #FFF;
+}
+
+.receive-vidiyo-header h5 {
+    color: #D9D9D9;
 }

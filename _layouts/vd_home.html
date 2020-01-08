@@ -13,6 +13,7 @@ addon: home
     <a-scene embedded>
         <a-assets>
             <a-asset-item id="phone" src="assets/gltf/phone-poly/model.gltf">
+            <!-- <video id="header-video" autoplay loop="true" src="assets/vidiyos/cover_vid.mp4"></video> -->
         </a-assets>
         <a-entity kaaroEntry>
             <!-- Tap to Enter -->
@@ -24,9 +25,11 @@ addon: home
             " position="0 0 -10" scale="4 4 4">
 
             <a-gltf-model src="#phone" position="0.1 -2 1"></a-gltf-model>
-            <a-sphere marker-specific-show="dev: true;" color="#F33" radius="0.1"></a-sphere>
+
             <a-entity marker-specific-show="marker: target-land-1">
                 <!-- Show Vidiyo Intro Vid -->
+                <a-sphere marker-specific-show="dev: true;" color="#F33" radius="0.1"></a-sphere>
+                <!-- <a-video src="#header-video" position="1 0 0"></a-video> -->
             </a-entity>
 
             <a-entity marker-specific-show="marker: target-right-2">

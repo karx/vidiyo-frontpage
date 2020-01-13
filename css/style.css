@@ -38,7 +38,7 @@ Website: http://themeforest.net/themesquared
 body {
     /* font-family: 'Open Sans', sans-serif; */
     list-style: none;
-    background: #04060F;
+    background: #eff2fe;
     overflow: auto !important;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
@@ -46,14 +46,14 @@ body {
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 60vh;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-weight: 700;
+    font-weight: 500;
     overflow: hidden;
     display: block;
     width: 100%;
@@ -97,7 +97,7 @@ iframe {
 /* 2. HEADER */
 
 header {
-    background: transparent;
+    background: #4a5997;
     position: fixed;
     z-index: 999;
     right: 0;
@@ -239,7 +239,7 @@ header {
     font-weight: 600;
     height: 60px;
     text-shadow: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 0 15px;
     line-height: 60px;
 }
@@ -287,7 +287,7 @@ header {
     display: block;
     padding: 6px 12px;
     font-size: 12px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .navbar .navbar-nav .sub-menu .sub-menu {
@@ -335,7 +335,7 @@ header {
 }
 
 .logo {
-    padding-top: 22px;
+    /* padding-top: 22px; */
 }
 
 .logo-alt {
@@ -374,7 +374,7 @@ header {
     display: none;
     font-size: 15px;
     font-weight: 400;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 3px;
     background: transparent;
     color: #000;
@@ -448,7 +448,7 @@ header {
     border: medium none;
     padding: 13px 15px;
     background: #222;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .sf-menu ul li:last-child {
@@ -496,7 +496,7 @@ header {
     padding: 15px 10px !important;
     text-decoration: none;
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 12px;
     font-weight: 400;
     background: transparent !important;
@@ -563,7 +563,7 @@ header {
 #intro {
     /* background: #04060F no-repeat center center; */
     background-size: cover;
-    padding: 200px 0 245px;
+    padding: 100px 0 50px;
     position: relative;
 }
 
@@ -581,7 +581,7 @@ header {
 	color: #FFF;
 	margin: 15px 0px 5px;
 	font-size: 70px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 400;
 	letter-spacing: -3px;
 } */
@@ -739,8 +739,9 @@ input.button:active {
 
 .section-head h2 {
     margin: 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 40px;
+    font-weight: 800;
 }
 
 .section-head h5 {
@@ -759,8 +760,9 @@ input.button:active {
 /* 5. SERVICES */
 
 #servicesA {
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
     scroll-snap-align: start;
+    text-align: left;
     /* background: #000; */
 }
 
@@ -778,16 +780,16 @@ input.button:active {
 
 .icon-box h3 {
     margin: 30px 0px 15px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 15px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1.5px;
-    color: #fff;
+    color: #3d55b6;
 }
 
 .icon-box p {
     font-size: 13px;
-    color: #878787;
+    color: #757c97;
     line-height: 25px;
     margin-bottom: 20px;
 }
@@ -798,7 +800,7 @@ input.button:active {
 }
 
 .box-info h2 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0 0 10px;
 }
 
@@ -817,14 +819,15 @@ input.button:active {
 
 .ni-wrap h4 {
     margin: 15px 0px 8px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 19px;
     letter-spacing: 1px;
-    color:#FFF;
+    color:#4a5997;
+    font-weight: 500;
 }
 
 .ni-wrap p {
-    color: #D9D9D9;
+    color: #818183;
     font-size: 12px;
     line-height: 20px;
     padding-bottom: 17px;
@@ -840,7 +843,7 @@ input.button:active {
     font-size: 11px;
     color: #666;
     margin-right: 15px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .news-meta span i {
@@ -969,7 +972,7 @@ input.button:active {
     border-radius: 50%;
     color: #CCC;
     background-color: #000;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -1019,7 +1022,7 @@ input.button:active {
     color: #F26639;
     margin: 0;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .album-list-wrap .album-card .year {
@@ -1064,7 +1067,7 @@ input.button:active {
 
 #tours h3 {
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 25px;
     letter-spacing: 2px;
     font-weight: 400;
@@ -1136,7 +1139,7 @@ input.button:active {
 
 .tour-ticket a {
     color: #F26639;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     /* font-family: Montserrat; */
     letter-spacing: 1px;
     font-size: 13px;
@@ -1229,7 +1232,7 @@ input.button:active {
 
 .team_profile_ttl h3 {
     font-size: 15px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1px;
     font-weight: 600;
     line-height: 15px;
@@ -1355,13 +1358,13 @@ input.button:active {
     font-weight: 700;
     color: #FFF;
     margin-bottom: 8px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1px;
 }
 
 #portfolio .item .caption span.category {
     font-weight: 600;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     display: block;
     color: #fff;
     letter-spacing: 1px;
@@ -1539,25 +1542,25 @@ input.button:active {
 
 .footer {
     padding: 60px 0;
-    background: #000;
+    background: #4a5997;
 }
 
 .widget-title {
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 13px;
     letter-spacing: 2px;
     margin: 0 0 20px;
 }
 
 .widget-content {
-    color: #999;
+    color: #eff2fe;
 }
 
 .widget-content p {
     font-size: 13px;
     line-height: 23px;
-    color: #999;
+    color: #eff2fe;
 }
 
 .instafeed {
@@ -1599,7 +1602,7 @@ input.button:active {
 }
 
 .footer-links li a {
-    color: #aaa;
+    color: #eff2fe;
     font-size: 12px;
 }
 
@@ -1621,7 +1624,7 @@ input.button:active {
 #page_head h2 {
     margin: 0px;
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 45px;
     text-align: center;
 }
@@ -1702,7 +1705,7 @@ input.button:active {
 
 .blog-item h2 {
     color: #333131;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 0;
     margin: 0;
     letter-spacing: 1px;
@@ -1762,7 +1765,7 @@ input.button:active {
 
 #post-content p {
     line-height: 28px;
-    color: #878787;
+    color: #757c97;
     font-size: 15px;
 }
 
@@ -1916,7 +1919,7 @@ input.button:active {
 }
 
 .post-content-wrapper h2 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 400;
     font-size: 35px;
     margin: 40px 0px 5px;
@@ -1964,7 +1967,7 @@ input.button:active {
 .widget .widgettitle {
     font-size: 16px;
     color: #474747;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-bottom: 35px;
     margin-top: 0px;
     padding-left: 20px;
@@ -2163,7 +2166,7 @@ input.button:active {
 
 #post-header .header-content .post-title {
     font-size: 45px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #FFF;
     font-weight: 400;
     margin: 0;
@@ -2209,7 +2212,7 @@ input.button:active {
 #post-body #post-side .post-meta .post-meta-inner>div {
     margin-bottom: 15px;
     color: #666;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 700;
 }
 
@@ -2228,7 +2231,7 @@ input.button:active {
 
 #post-body #post-side a {
     color: #666;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 700;
 }
 
@@ -2245,7 +2248,7 @@ input.button:active {
 #post-nav .prev-post,
 #post-nav .next-post,
 #post-nav .close-post {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 12px;
     color: #818181;
     padding: 10px 40px;
@@ -2596,7 +2599,7 @@ input.button:active {
     .icon-box p {
         margin-bottom: 40px;
     }
-    #services {
+    .services {
         padding: 100px 0px 70px;
     }
     .section-head h2 {
@@ -2697,7 +2700,7 @@ input.button:active {
         color: #fff;
     }
     .logo {
-        padding-top: 32px;
+        padding-top: 0px;
     }
     .logo a img {
         max-width: 75px;
@@ -2731,7 +2734,7 @@ input.button:active {
         border: medium none;
         padding: 13px 15px;
         background: #111;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
         border-bottom: 1px solid #272727;
     }
     .mobnav-subarrow {
@@ -2804,6 +2807,9 @@ input.button:active {
 
 .image-cropper-custom-2 {
     overflow: hidden;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 8px 35px -12px rgba(74,89,151,0.59); 
+box-shadow: 0px 8px 35px -12px rgba(74,89,151,0.59);
 }
 
 .image-cropper-custom {
@@ -2905,7 +2911,7 @@ input.button:active {
 
 .stars-header {
     padding: 100px 0 10px;
-    background: #000 !important;
+    background: #4a5997 !important;
 }
 
 .stars-detail {
@@ -2931,16 +2937,16 @@ input.button:active {
 
 .header-image-tags h3 {
     /* font-family: Montserrat, Sans-serif; */
-    color: #EDEDEB;
+    color: #4a5997;
     text-decoration: underline;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 100;
     font-size: 2.63rem;
 }
 
 .header-image-tags h2 {
     /* font-family: Montserrat, Sans-serif !important; */
-    color: #F26639;
+    color: #3d55b6;
     text-transform: uppercase;
     font-weight: 200;
     font-size: 3.9rem;
@@ -2950,7 +2956,7 @@ input.button:active {
 .header-image-tags h1 {
     /* font-family: Montserrat, Sans-serif !important; */
     color: #07EDF2 !important;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 600;
     font-size: 7.23rem;
     /* text-decoration: underline;  */
@@ -2999,13 +3005,47 @@ a-scene {
 }
 
 .header-btn img{
-    height: 72px;
+    height: 45px;
 }
 
 .receive-vidiyo-header h2 {
-    color: #FFF;
+    color: #3d55b6;
 }
 
 .receive-vidiyo-header h5 {
-    color: #D9D9D9;
+    color: #818183;
+}
+
+.app-link-img path {
+    fill: aqua;
+}
+
+
+#header-container {
+    padding: 10px;
+}
+.icon-box {
+    background-repeat: no-repeat;
+    height: 185px;    
+}
+#icon-box-A {
+    background-image: url('../assets/1.png') ;
+}
+#icon-box-B {
+    background-image: url('../assets/2.png');
+    
+    background-position: right top;
+}
+#icon-box-C {
+    background-image: url('../assets/3.png');
+}
+
+#icon-box-A h3{ 
+    padding-left: 75px;
+}
+#icon-box-B h3{ 
+    padding-right: 100px;
+}
+#icon-box-C h3{ 
+    padding-left: 108px;
 }

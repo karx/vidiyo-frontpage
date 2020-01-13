@@ -17,15 +17,16 @@ addon: home
         <div class="container" id="intro-container">
             <div class="col-md-12 text-center header-image-tags">
                 <h3>Get Famous On-demand!</h3>
-                <h2>Get a personalized video</h2>
-                <h1 id="target-land-1">shoutout</h1>
+                <h2><b>Get a personalized video shout-out</b></h2>
+                <img src="/assets/illustration.png" alt="">
+                <!-- <h1 id="target-land-1">shoutout</h1> -->
                 <!-- <p>
 						Personalized video shoutouts from your favourite celebrities, musicians, influencers, actors,
 						athletes, dancers, entertainers, gamers, standup comedians.
 					</p> -->
                 <div class="dual-btns" id="download-app">
-                    <a href="/browse.html" class="header-btn"><img src="/images/app_store_us.svg" alt="Download on Apple Store"></a>
-                    <a href="/register-talent.html" class="header-btn"><img src="/images/Google_Play_Store_badge_EN.svg" alt="Download on Android" srcset=""></a>
+                    <a href="/browse.html" class="header-btn"><img src="/images/app_store_us.svg" alt="Download on Apple Store" class="app-link-img"></a>
+                    <a href="/register-talent.html" class="header-btn"><img src="/images/Google_Play_Store_badge_EN.svg" alt="Download on Android" srcset="" class="app-link-img"></a>
                 </div>
             </div>
         </div>
@@ -35,12 +36,12 @@ addon: home
     <div class="wrapper">
 
         <!-- Steps 1 And 2 -->
-        <div id="servicesA">
+        <div id="servicesA" class="services">
             <div class="container">
-                <div class="row text-center">
+                <div class="row text-left">
                     <div class="col-md-6">
-                        <div class="icon-box">
-                            <i class="play-tv2"></i>
+                        <div class="icon-box" id="icon-box-A">
+                            
                             <h3 id="target-right-2"> Select a celebrity</h3>
                             <p>Pick a Celebrity from our ever-growing list and begin. You can do this by searching for
                                 them or browsing our alphabetical directory. Don’t worry; if your favourite celebrity is
@@ -53,13 +54,13 @@ addon: home
                 </div>
             </div>
         </div>
-        <div id="servicesB">
+        <div id="servicesB" class="services">
             <div class="container">
-                <div class="row text-center">
+                <div class="row text-right">
                     <div class="col-md-6 emptyforBackground"></div>
-                    <div class="col-md-6">
-                        <div class="icon-box">
-                            <i class="play-vynil"></i>
+                    <div class="col-md-6" >
+                        <div class="icon-box" id="icon-box-B">
+                            
                             <h3 id="target-left-3">Request shoutout Vidiyo!</h3>
                             <p>Sit back and wait for your Vidiyo to arrive. Please be calm as celebrities are very busy.
                                 Once complete you will receive your custom video in your DM. After that, you can share
@@ -71,12 +72,12 @@ addon: home
                 </div>
             </div>
         </div>
-        <div id="services">
+        <div id="services" class="services">
             <div class="container">
-                <div class="row text-center">
+                <div class="row text-left">
                     <div class="col-md-6">
-                        <div class="icon-box">
-                            <i class="play-tv2"></i>
+                        <div class="icon-box" id="icon-box-C">
+                            
                             <h3 id="target-right-2"> Celebrity Response</h3>
                             <p>You will get Vidiyo that you can share. You will get Vidiyo that you can share. You will get Vidiyo that you can share. You will get Vidiyo that you can share.</p>
                         </div>
@@ -91,7 +92,7 @@ addon: home
         <div id="news-wrap">
             <div class="container">
                 <div class="section-head text-center receive-vidiyo-header">
-                    <h2>Receive Vidiyos</h2>
+                    <h2><b>Recent Shout-outs</b></h2>
                     <h5>Checkout these latest shoutouts on Vidiyo.!</h5>
                 </div>
                 {% assign news_stars = site.vidiyos %}
@@ -104,8 +105,6 @@ addon: home
                                 <div class="news-item col-md-3">
                                     <div class="ni-wrap">
                                         <div class="image-cropper-custom-2">
-
-
                                             <video src="{{each_news_star.vid_url}}"
                                                 class="video-autoplay-pusher img-responsive" alt="" loop="true"
                                                 autoplay="true" muted></video>
@@ -127,46 +126,7 @@ addon: home
         
 
 
-        <!-- Stars -->
-        <div id="albums">
-            <div id="stars" class="section-head text-center">
-                <h2 id="target">The Stardom is real</h2>
-                <h5>Want to ask them for a dedicated birthday wish 🎂, or a late anniversary wish 💌 </h5>
-            </div>
-
-            <div class="album-list-wrap stars-all">
-                {% assign actor_stars = site.stars | where: "front_type","actors" %}
-                {% for each_actor_star in actor_stars limit:8 %}
-
-                <!-- Album Item -->
-                <li class="Actor">
-
-                    <div class="col-md-3 col-sm-6 album-card-wrap nopadding ">
-                        <div class="album-card">
-                            <div class="image hoverdir-target custom-star-image-cropper">
-                                <img alt="image" src="{{each_actor_star.image_url}}">
-                                <div class="overlay">
-                                    <div class="button-wrapper">
-                                        <div class="view-button">
-                                            <a class="link" href="{{each_actor_star.url}}">
-                                                <span><strong
-                                                        class="bold">{{each_actor_star.first_name}}</strong><br>{{each_actor_star.last_name}}</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </li>
-                <!-- Album Item -->
-
-                {% endfor %}
-
-            </div>
-        </div>
-
+       
         <!-- Why Vidiyo -->
        
         

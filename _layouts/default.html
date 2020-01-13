@@ -6,21 +6,14 @@
 <html>
 
 <head>
-	{% include head.html %}
-	{% if layout.addon == 'star' %}
-	{% include star_head_addon.html %}
-	{% endif %}
-	{% if layout.addon == 'talent' %}
-	{% include talent_head_addon.html %}
-	{% endif %}
-	{% if layout.addon == 'home' %}
-	{% include home_head_addon.html %}
-	{% endif %}
-	
+    {% include head.html %} {% if layout.addon == 'star' %} {% include star_head_addon.html %} {% endif %} {% if layout.addon == 'talent' %} {% include talent_head_addon.html %} {% endif %} {% if layout.addon == 'home' %} {% include home_head_addon.html %}
+    {% endif %}
+    <script src="https://aframe.io/releases/1.0.1/aframe.min.js"></script>
+    <script src="js/custom-frame.js"></script>
 </head>
 
 <body>
-	{{ content }}
+    {{ content }}
 </body>
 
 </html>

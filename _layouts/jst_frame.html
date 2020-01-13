@@ -1,0 +1,24 @@
+---
+layout: default
+addon: home
+---
+
+<div id="page-top"></div>
+
+<div class="body">
+
+    <!-- HEADER -->
+    {% include header.html %}
+    <!-- HEADER -->
+    <a-scene embedded>
+        <a-assets>
+            <a-asset-item id="phone" src="assets/gltf/phone-poly/model.gltf">
+        </a-assets>
+        <a-gltf-model header-phone src="#phone" position="0 0 -1"></a-gltf-model>
+        <a-entity id="rig" position="0 1.6 0" rotation="0 0  0">
+            <a-entity id="camera" camera look-controls wasd-controls></a-entity>
+        </a-entity>
+    </a-scene>
+</div>
+<!-- Javascript -->
+{% include footer_scripts.html %}

@@ -80,7 +80,11 @@ a {
 }
 
 a:hover {
+<<<<<<< HEAD
     color: #F26639;
+=======
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     transition: .4s
 }
 
@@ -458,7 +462,11 @@ header {
 .sf-menu ul li:hover {}
 
 .sf-menu ul li a:hover {
+<<<<<<< HEAD
     color: #F26639;
+=======
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 .sf-mega-section span a {
@@ -503,7 +511,11 @@ header {
 }
 
 .sf-menu>li>a:hover {
+<<<<<<< HEAD
     color: #F26639 !important;
+=======
+    color: #ED3C9C !important;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 .sf-menu>li:hover {
@@ -553,8 +565,13 @@ header {
 }
 
 .tp-social a:hover {
+<<<<<<< HEAD
     color: #F26639;
     border-color: #F26639;
+=======
+    color: #ED3C9C;
+    border-color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 
@@ -563,7 +580,7 @@ header {
 #intro {
     /* background: #04060F no-repeat center center; */
     background-size: cover;
-    padding: 295px 0 245px;
+    padding: 200px 0 245px;
     position: relative;
 }
 
@@ -637,6 +654,9 @@ header {
     /* background: #fff; */
     position: relative;
     z-index: 555;
+
+    scroll-snap-type: y mandatory;
+
 }
 
 #okplayer {
@@ -661,6 +681,7 @@ header {
 
 .btn-default:hover {
     background: transparent;
+<<<<<<< HEAD
     color: #F26639;
     border-color: #F26639;
 }
@@ -668,6 +689,15 @@ header {
 .btn-default {
     background: #F26639;
     border: 2px solid #F26639;
+=======
+    color: #ED3C9C;
+    border-color: #ED3C9C;
+}
+
+.btn-default {
+    background: #ED3C9C;
+    border: 2px solid #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     color: #fff;
     padding: 14px 33px;
 }
@@ -685,8 +715,13 @@ header {
 
 .btn-border:hover {
     background: transparent;
+<<<<<<< HEAD
     border: 2px solid #F26639;
     color: #F26639;
+=======
+    border: 2px solid #ED3C9C;
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 .button.large {
@@ -704,7 +739,11 @@ input.button {
     -webkit-border-radius: .333em;
     -moz-border-radius: .333em;
     border-radius: .333em;
+<<<<<<< HEAD
     background-color: #F26639;
+=======
+    background-color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     color: #FFF !important;
     text-decoration: none !important;
     text-transform: uppercase;
@@ -755,13 +794,25 @@ input.button:active {
 
 /* 5. SERVICES */
 
-#services {
+#servicesA {
     padding: 100px 0 100px;
+    scroll-snap-align: start;
+    /* background: #000; */
+}
+
+
+#servicesB {
+    /* padding: 100px 0 100px; */
+    scroll-snap-align: start;
     /* background: #000; */
 }
 
 .icon-box i {
+<<<<<<< HEAD
     color: #F26639;
+=======
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     font-size: 60px;
 }
 
@@ -796,6 +847,7 @@ input.button:active {
 
 #news-wrap {
     padding: 80px 0 100px;
+    scroll-snap-align: start;
 }
 
 .news-item {
@@ -808,10 +860,11 @@ input.button:active {
     text-transform: uppercase;
     font-size: 19px;
     letter-spacing: 1px;
+    color:#FFF;
 }
 
 .ni-wrap p {
-    color: #777;
+    color: #D9D9D9;
     font-size: 12px;
     line-height: 20px;
     padding-bottom: 17px;
@@ -837,7 +890,11 @@ input.button:active {
 }
 
 .news-meta span a {
+<<<<<<< HEAD
     color: #F26639;
+=======
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 
@@ -873,7 +930,11 @@ input.button:active {
 }
 
 .jp-volume-bar-value {
+<<<<<<< HEAD
     background: #F26639;
+=======
+    background: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 
@@ -964,7 +1025,11 @@ input.button:active {
 }
 
 .album-list-wrap .album-card .image .overlay .button-wrapper .view-button .link:hover span {
+<<<<<<< HEAD
     color: #F26639;
+=======
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 .album-list-wrap .album-card .image .overlay .button-wrapper .view-button .link span {
@@ -1003,7 +1068,11 @@ input.button:active {
 
 .album-list-wrap .album-card .title h4 {
     font-size: 14px;
+<<<<<<< HEAD
     color: #F26639;
+=======
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     margin: 0;
     font-weight: 700;
     text-transform: uppercase;
@@ -1111,7 +1180,11 @@ input.button:active {
 }
 
 .tour-info a {
+<<<<<<< HEAD
     color: #F26639;
+=======
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     font-size: 18px;
 }
 
@@ -1122,7 +1195,11 @@ input.button:active {
 }
 
 .tour-ticket a {
+<<<<<<< HEAD
     color: #F26639;
+=======
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     text-transform: uppercase;
     /* font-family: Montserrat; */
     letter-spacing: 1px;
@@ -1279,7 +1356,11 @@ input.button:active {
 }
 
 #portfolio .item .caption i {
+<<<<<<< HEAD
     background: #F26639;
+=======
+    background: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     color: #fff;
     font-size: 15px;
     padding: 0 !important;
@@ -1297,7 +1378,11 @@ input.button:active {
 }
 
 #portfolio .item:hover .caption i {
+<<<<<<< HEAD
     background: #F26639;
+=======
+    background: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     color: #fff;
     font-size: 20px;
     padding: 0 !important;
@@ -1429,7 +1514,11 @@ input.button:active {
 #contact form button {
     border: medium none;
     font-size: 14px;
+<<<<<<< HEAD
     background: #F26639;
+=======
+    background: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 #contact form button:hover {
@@ -1491,11 +1580,19 @@ input.button:active {
     top: 35px;
     font-size: 75px;
     opacity: 1;
+<<<<<<< HEAD
     color: #F26639;
 }
 
 #tweecool ul li a {
     color: #F26639;
+=======
+    color: #ED3C9C;
+}
+
+#tweecool ul li a {
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 #tweecool+.btn-default {
@@ -1967,7 +2064,11 @@ input.button:active {
     left: 0;
     top: 0;
     width: 4px;
+<<<<<<< HEAD
     background: #F26639;
+=======
+    background: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 .widget ul {
@@ -2804,23 +2905,31 @@ input.button:active {
 }
 
 .pinky-desc {
+<<<<<<< HEAD
     color: #F26639;
+=======
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 .deadmause-link :hover {
-    color: #39FF14;
+    color: #3D949C;
 }
 
 .deadmause-desc {
-    color: #39FF14;
+    color: #3D949C;
 }
 
 .deadmause-desc:hover {
+<<<<<<< HEAD
     color: #F26639;
+=======
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 .pinky-desc:hover {
-    color: #39FF14;
+    color: #3D949C;
 }
 
 .top-profile-icon {
@@ -2861,7 +2970,11 @@ input.button:active {
 #profile-ind form button {
     border: medium none;
     font-size: 12px;
+<<<<<<< HEAD
     background: #F26639;
+=======
+    background: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 #profile-ind form button:hover {
@@ -2887,7 +3000,11 @@ input.button:active {
 }
 
 .qoute-main {
+<<<<<<< HEAD
     color: #F26639;
+=======
+    color: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
 }
 
 .stars-header {
@@ -2910,15 +3027,24 @@ input.button:active {
 .star-book-btn {
     border: medium none;
     font-size: 14px;
+<<<<<<< HEAD
     background: #F26639;
+=======
+    background: #ED3C9C;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     color: #FFF;
     padding: 12px 25px;
     transition: background-color .3s linear, color .3s linear;
 }
 
 .header-image-tags h3 {
+<<<<<<< HEAD
     /* font-family: Montserrat, Sans-serif; */
     color: #EDEDEB;
+=======
+    font-family: Montserrat, Sans-serif;
+    color: #FFFFFF;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     text-decoration: underline;
     text-transform: uppercase;
     font-weight: 100;
@@ -2926,8 +3052,13 @@ input.button:active {
 }
 
 .header-image-tags h2 {
+<<<<<<< HEAD
     /* font-family: Montserrat, Sans-serif !important; */
     color: #F26639;
+=======
+    font-family: Montserrat, Sans-serif !important;
+    color: #E72662;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     text-transform: uppercase;
     font-weight: 200;
     font-size: 3.9rem;
@@ -2935,8 +3066,13 @@ input.button:active {
 }
 
 .header-image-tags h1 {
+<<<<<<< HEAD
     /* font-family: Montserrat, Sans-serif !important; */
     color: #07EDF2 !important;
+=======
+    font-family: Montserrat, Sans-serif !important;
+    color: #3D9497 !important;
+>>>>>>> 95bc844ff8dc3c7450b3ff586000165604ef65ea
     text-transform: uppercase;
     font-weight: 600;
     font-size: 7.23rem;
@@ -2987,4 +3123,12 @@ a-scene {
 
 .header-btn img{
     height: 72px;
+}
+
+.receive-vidiyo-header h2 {
+    color: #FFF;
+}
+
+.receive-vidiyo-header h5 {
+    color: #D9D9D9;
 }

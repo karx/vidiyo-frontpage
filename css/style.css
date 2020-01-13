@@ -36,11 +36,12 @@ Website: http://themeforest.net/themesquared
 /* 1. GLOBAL STYLES */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     list-style: none;
-    /* background: #fff; */
+    background: #04060F;
     overflow: auto !important;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -57,7 +58,7 @@ h4 {
     display: block;
     width: 100%;
     clear: both;
-    font-family: Montserrat, Sans-serif;
+    /* font-family: Montserrat, Sans-serif; */
 }
 
 strong,
@@ -79,7 +80,7 @@ a {
 }
 
 a:hover {
-    color: #FF00A4;
+    color: #F26639;
     transition: .4s
 }
 
@@ -347,7 +348,7 @@ header {
 }
 
 .logo a img {
-    max-width: 135px;
+    max-width: 75px;
 }
 
 .topbar {
@@ -457,7 +458,7 @@ header {
 .sf-menu ul li:hover {}
 
 .sf-menu ul li a:hover {
-    color: #FF00A4;
+    color: #F26639;
 }
 
 .sf-mega-section span a {
@@ -481,7 +482,7 @@ header {
 
 .sf-menu>li {
     background: transparent !important;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     margin-top: 20px;
 }
 
@@ -502,7 +503,7 @@ header {
 }
 
 .sf-menu>li>a:hover {
-    color: #FF00A4 !important;
+    color: #F26639 !important;
 }
 
 .sf-menu>li:hover {
@@ -552,8 +553,8 @@ header {
 }
 
 .tp-social a:hover {
-    color: #FF00A4;
-    border-color: #FF00A4;
+    color: #F26639;
+    border-color: #F26639;
 }
 
 
@@ -654,19 +655,19 @@ header {
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 2px;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     border-radius: 0px;
 }
 
 .btn-default:hover {
     background: transparent;
-    color: #FF00A4;
-    border-color: #FF00A4;
+    color: #F26639;
+    border-color: #F26639;
 }
 
 .btn-default {
-    background: #FF00A4;
-    border: 2px solid #FF00A4;
+    background: #F26639;
+    border: 2px solid #F26639;
     color: #fff;
     padding: 14px 33px;
 }
@@ -684,8 +685,8 @@ header {
 
 .btn-border:hover {
     background: transparent;
-    border: 2px solid #FF00A4;
-    color: #FF00A4;
+    border: 2px solid #F26639;
+    color: #F26639;
 }
 
 .button.large {
@@ -703,12 +704,12 @@ input.button {
     -webkit-border-radius: .333em;
     -moz-border-radius: .333em;
     border-radius: .333em;
-    background-color: #FF00A4;
+    background-color: #F26639;
     color: #FFF !important;
     text-decoration: none !important;
     text-transform: uppercase;
     font-size: .778em;
-    font-family: 'Montserrat', sans-serif !important;
+    /* font-family: 'Montserrat', sans-serif !important; */
     line-height: 1.714em !important;
     cursor: pointer;
 }
@@ -740,7 +741,7 @@ input.button:active {
 }
 
 .section-head h5 {
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     margin: 0px 0 35px;
     font-size: 20px;
     font-weight: 400;
@@ -760,7 +761,7 @@ input.button:active {
 }
 
 .icon-box i {
-    color: #FF00A4;
+    color: #F26639;
     font-size: 60px;
 }
 
@@ -836,7 +837,7 @@ input.button:active {
 }
 
 .news-meta span a {
-    color: #FF00A4;
+    color: #F26639;
 }
 
 
@@ -872,7 +873,7 @@ input.button:active {
 }
 
 .jp-volume-bar-value {
-    background: #FF00A4;
+    background: #F26639;
 }
 
 
@@ -891,7 +892,7 @@ input.button:active {
 }
 
 #albums h6 {
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     margin: 45px 0px 45px;
     font-size: 20px;
     font-weight: 400;
@@ -963,11 +964,11 @@ input.button:active {
 }
 
 .album-list-wrap .album-card .image .overlay .button-wrapper .view-button .link:hover span {
-    color: #FF00A4;
+    color: #F26639;
 }
 
 .album-list-wrap .album-card .image .overlay .button-wrapper .view-button .link span {
-    font-family: "Open Sans", helvetica, sans-serif;
+    /* font-family: "Open Sans", helvetica, sans-serif; */
     text-decoration: none;
     display: block;
     font-weight: 700;
@@ -981,7 +982,7 @@ input.button:active {
 }
 
 .album-list-wrap .album-card .image .overlay .button-wrapper .view-button .link span .bold {
-    font-family: "Open Sans", helvetica, sans-serif;
+    /* font-family: "Open Sans", helvetica, sans-serif; */
     font-weight: 300;
     font-size: 16px;
 }
@@ -1002,7 +1003,7 @@ input.button:active {
 
 .album-list-wrap .album-card .title h4 {
     font-size: 14px;
-    color: #FF00A4;
+    color: #F26639;
     margin: 0;
     font-weight: 700;
     text-transform: uppercase;
@@ -1014,7 +1015,7 @@ input.button:active {
     right: 15px;
     color: #ccc;
     cursor: pointer;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
 }
 
 .album-list-wrap .pagination-wrap {
@@ -1110,7 +1111,7 @@ input.button:active {
 }
 
 .tour-info a {
-    color: #FF00A4;
+    color: #F26639;
     font-size: 18px;
 }
 
@@ -1121,9 +1122,9 @@ input.button:active {
 }
 
 .tour-ticket a {
-    color: #FF00A4;
+    color: #F26639;
     text-transform: uppercase;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     letter-spacing: 1px;
     font-size: 13px;
 }
@@ -1278,7 +1279,7 @@ input.button:active {
 }
 
 #portfolio .item .caption i {
-    background: #FF00A4;
+    background: #F26639;
     color: #fff;
     font-size: 15px;
     padding: 0 !important;
@@ -1296,7 +1297,7 @@ input.button:active {
 }
 
 #portfolio .item:hover .caption i {
-    background: #FF00A4;
+    background: #F26639;
     color: #fff;
     font-size: 20px;
     padding: 0 !important;
@@ -1428,7 +1429,7 @@ input.button:active {
 #contact form button {
     border: medium none;
     font-size: 14px;
-    background: #FF00A4;
+    background: #F26639;
 }
 
 #contact form button:hover {
@@ -1484,17 +1485,17 @@ input.button:active {
 
 #tweecool ul li:after {
     content: "\f099";
-    font-family: "FontAwesome";
+    /* font-family: "FontAwesome"; */
     position: absolute;
     left: 0;
     top: 35px;
     font-size: 75px;
     opacity: 1;
-    color: #FF00A4;
+    color: #F26639;
 }
 
 #tweecool ul li a {
-    color: #FF00A4;
+    color: #F26639;
 }
 
 #tweecool+.btn-default {
@@ -1525,7 +1526,7 @@ input.button:active {
 
 .footer {
     padding: 60px 0;
-    background: #272727;
+    background: #000;
 }
 
 .widget-title {
@@ -1674,7 +1675,7 @@ input.button:active {
 
 .blog-wrapper {
     background: #FFF;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 .blogContentWrapper {
@@ -1703,7 +1704,7 @@ input.button:active {
 .blog-item p {
     color: #979191;
     font-size: 13px;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     line-height: 24px;
     margin: 0 0 15px;
 }
@@ -1757,7 +1758,7 @@ input.button:active {
     font-size: 28px;
     margin-bottom: 30px;
     font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 .blog-list .post-header a,
@@ -1842,7 +1843,7 @@ input.button:active {
 
 .blog-list .post-format-quote .quote .author {
     font-weight: 600;
-    font-family: 'Open Sans';
+    /* font-family: 'Open Sans'; */
     font-size: 16px;
 }
 
@@ -1894,7 +1895,7 @@ input.button:active {
 .blog-grid .post-header {
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Open Sans';
+    /* font-family: 'Open Sans'; */
 }
 
 .blog-grid .post-content-wrapper {
@@ -1955,7 +1956,7 @@ input.button:active {
     margin-top: 0px;
     padding-left: 20px;
     position: relative;
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     letter-spacing: 2px;
 }
 
@@ -1966,7 +1967,7 @@ input.button:active {
     left: 0;
     top: 0;
     width: 4px;
-    background: #FF00A4;
+    background: #F26639;
 }
 
 .widget ul {
@@ -2325,7 +2326,7 @@ input.button:active {
 #comment-list .comment-meta ul .author-name {
     font-size: 16px;
     font-weight: 600;
-    font-family: 'Open Sans';
+    /* font-family: 'Open Sans'; */
 }
 
 #comment-list .comment-meta ul li span {
@@ -2333,7 +2334,7 @@ input.button:active {
     margin-right: 6px;
     font-size: 18px;
     font-weight: 600;
-    font-family: 'Open Sans';
+    /* font-family: 'Open Sans'; */
     position: relative;
     top: 2px;
 }
@@ -2686,7 +2687,7 @@ input.button:active {
         padding-top: 32px;
     }
     .logo a img {
-        max-width: 90px;
+        max-width: 75px;
     }
     .sf-menu>li>a {
         padding: 14px 25px;
@@ -2803,7 +2804,7 @@ input.button:active {
 }
 
 .pinky-desc {
-    color: #FF00A4;
+    color: #F26639;
 }
 
 .deadmause-link :hover {
@@ -2815,7 +2816,7 @@ input.button:active {
 }
 
 .deadmause-desc:hover {
-    color: #FF00A4;
+    color: #F26639;
 }
 
 .pinky-desc:hover {
@@ -2860,7 +2861,7 @@ input.button:active {
 #profile-ind form button {
     border: medium none;
     font-size: 12px;
-    background: #FF00A4;
+    background: #F26639;
 }
 
 #profile-ind form button:hover {
@@ -2886,7 +2887,7 @@ input.button:active {
 }
 
 .qoute-main {
-    color: #FF00A4;
+    color: #F26639;
 }
 
 .stars-header {
@@ -2903,20 +2904,20 @@ input.button:active {
 .stars-detail .star-name {
     font-size: 35px;
     font-weight: 700;
-    font-family: Montserrat, Sans-serif;
+    /* font-family: Montserrat, Sans-serif; */
 }
 
 .star-book-btn {
     border: medium none;
     font-size: 14px;
-    background: #FF00A4;
+    background: #F26639;
     color: #FFF;
     padding: 12px 25px;
     transition: background-color .3s linear, color .3s linear;
 }
 
 .header-image-tags h3 {
-    font-family: Montserrat, Sans-serif;
+    /* font-family: Montserrat, Sans-serif; */
     color: #EDEDEB;
     text-decoration: underline;
     text-transform: uppercase;
@@ -2925,8 +2926,8 @@ input.button:active {
 }
 
 .header-image-tags h2 {
-    font-family: Montserrat, Sans-serif !important;
-    color: #F8007D;
+    /* font-family: Montserrat, Sans-serif !important; */
+    color: #F26639;
     text-transform: uppercase;
     font-weight: 200;
     font-size: 3.9rem;
@@ -2934,7 +2935,7 @@ input.button:active {
 }
 
 .header-image-tags h1 {
-    font-family: Montserrat, Sans-serif !important;
+    /* font-family: Montserrat, Sans-serif !important; */
     color: #07EDF2 !important;
     text-transform: uppercase;
     font-weight: 600;

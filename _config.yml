@@ -190,6 +190,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-admin
   
 
 # mimic GitHub Pages with --safe
@@ -261,6 +262,14 @@ defaults:
         author_profile: false
         share: true
         related: true
+  # Vidiyos
+  - scope:
+      path: "_vidiyos"
+      type: vidiyo
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 
 collections:
@@ -268,6 +277,8 @@ collections:
      output: true
      permalink: /stars/:name
      layout: single
+  vidiyos:
+    output: false
   # events:
   #    output: true
   #    permalink: /events/:name
@@ -283,7 +294,7 @@ collections:
 
 ## Javascript
 head_scripts:
-  - /assets/js/kaaro.js
+  # - /assets/js/kaaro.js
 
 # footer_scripts:
 #   - /assets/vendor/jquery/jquery.min.js

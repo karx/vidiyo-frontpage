@@ -1,0 +1,80 @@
+---
+layout: default
+addon: star
+---
+<div id="page-top"></div>
+
+<div class="body">
+
+	<!-- HEADER -->
+	{% include header.html %}
+	<!-- HEADER -->
+
+	<div class="wrapper">
+		{% include random_qoute.html %}
+        <div id="some-id">
+            <div class="container">
+                {{content}}
+            </div>
+            
+        </div>
+        <!-- <hr class="custom-hr"> -->
+
+		<div id="team-wrap">
+			<div id="comics" class="container">
+				<div class="section-head text-center">
+					<h2>...</h2>
+					<h5></h5>
+				</div>
+
+				<div class="row">
+					{% assign comic_stars = site.stars  %}
+					{% for each_comic_star in comic_stars limit:3 %}
+
+					<div class="col-md-4 team-item">
+						<div class="team_member_wrap">
+							<a href="{{each_comic_star.url}}">
+								<div class="team_profile_wrap">
+									<div class="team_profile_pic image-cropper-custom">
+										<img alt="image" src="{{each_comic_star.image_url}}">
+									</div>
+									<div class="team_profile_ttl">
+										<h3>{{each_comic_star.name}}</h3>
+										<h4>{{each_comic_star.excerpt}}</h4>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		{% include footer.html %}
+		<!-- FOOTER -->
+
+	</div>
+
+</div>
+
+<!-- Javascript -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/classie.js"></script>
+<script src="../js/tweecool.min.js"></script>
+<script src="../js/jplayer.playlist.min.js"></script>
+<script src="../js/jquery.jplayer.min.js"></script>
+<script src="../js/superfish/js/hoverIntent.js"></script>
+<script src="../js/superfish/js/superfish.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/stellar.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/prettyphoto/jquery.prettyPhoto.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/contact.js"></script>
+<script src="../js/custom.js"></script>
+<script src="../js/custom-kaaro.js"></script>
+<script src="../js/custom-stars.js"></script>
+<script src="../js/custom-qoute.js"></script>

@@ -19,14 +19,14 @@ jQuery(function($) {
         horizontalOffset: 50
     });
 
-    // Fixed Header
-    $(window).scroll(function() {
-        var value = $(this).scrollTop();
-        if (value > 100)
-            $("header").css("background", "#000").css("padding", "0px 0px 13px");
-        else
-            $("header").css("background", "transparent");
-    });
+    // // Fixed Header
+    // $(window).scroll(function() {
+    //     var value = $(this).scrollTop();
+    //     if (value > 100)
+    //         $("header").css("background", "#000").css("padding", "0px 0px 13px");
+    //     else
+    //         $("header").css("background", "transparent");
+    // });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('body').on('click', 'a.page-scroll', function(event) {

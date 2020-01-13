@@ -1,245 +1,224 @@
-<!DOCTYPE html>
-<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
-<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
-<!--[if gt IE 9]><!-->
-<html>
-<!--<![endif]-->
+---
+layout: default
+addon: star
+---
+<div id="page-top"></div>
 
-<head>
+<div class="body">
 
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta name="keywords" content="HTML5 Template" />
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<!-- HEADER -->
+	{% include header.html %}
+	<!-- HEADER -->
 
-	<title>Vidiyo | Get personalized shoutout</title>
 
-	<!-- Mobile Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="images/vidiyo_logo.svg">
-
-	<!-- Google Webfont -->
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic' rel='stylesheet'
-		type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,800'
-		rel='stylesheet' type='text/css'>
-
-	<!-- CSS -->
-	<link rel="stylesheet" href="../css/font-awesome.min.css" />
-	<link rel="stylesheet" href="../css/bootstrap.min.css" />
-	<link rel="stylesheet" href="../css/jplayer.pink.flag.css" />
-	<link rel="stylesheet" href="../css/animate.css" />
-	<link rel="stylesheet" href="../js/superfish/css/megafish.css" media="screen">
-	<link rel="stylesheet" href="../js/superfish/css/superfish.css" media="screen">
-	<link rel="stylesheet" href="../css/icon/style.css" />
-	<link rel="stylesheet" href="../css/prettyphoto.css">
-	<link rel="stylesheet" href="../css/style.css" />
-
-	<!-- SKIN -->
-	<!-- <link rel="stylesheet" href="css/skin/green.css"> -->
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-</head>
-
-<body>
-	<div id="page-top"></div>
-
-	<div class="body">
-
-		<!-- HEADER -->
-		<header>
+	<div class="wrapper">
+		<div class="stars-header">
 			<div class="container">
-				<div class="logo col-md-2 col-xs-4">
-					<a href="/index.html"><img src="../images/vidiyo_logo.svg" class="img-responsive" alt="" /></a>
-				</div>
+				<div class="row text-center">
+					<div class="col-md-12">
+						<div class="qoute-box">
+							<h3 id="qoute-main" class="qoute-main">
 
-				<div class="col-md-10 col-xs-8 header-right">
+								<div class="loading">
+									<div class="loading_dots">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</h3>
+							<h6 id="qoute-by" class="qoute-by"> -
+
+							</h6>
+
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+		<div id="star_wrapper">
+			<div class="top-bar">
+				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
-							<div class="topbar pull-right">
-								<span class="tp-social">
-									<a href="/index.html" class="fa fa-twitter"></a>
-									<a href="/index.html" class="fa fa-facebook"></a>
-									<a href="/index.html" class="fa fa-google-plus"></a>
-									<a href="/index.html" class="fa fa-dribbble"></a>
-									<a href="/index.html" class="fa fa-linkedin"></a>
-								</span>
+						<div class="guy-image  col-lg-4 col-sm-4">
+							<img src="{{page.image_url}}" class="img-responsive img-star-rep" alt="">
+						</div>
+						<div class="guy-profile  col-lg-8 col-sm-8">
+							<div class="title">
+								<h1>{{page.name}}</h1>
+								<h3>{{page.excerpt}}</h3>
+								<!-- <h3>A N O T H E R <strong>C O D E P E N</strong></h3> -->
 							</div>
-
-							<nav class="menu-wrap">
-								<div id="mobnav-btn"><i class="fa fa-bars"></i></div>
-								<ul class="sf-menu">
-									<li>
-										<a class="page-scroll" href="#page-top">Home</a>
-									</li>
-									<li><a class="page-scroll" href="/index.html#services">Services</a></li>
-									<li><a class="page-scroll" href="/index.html#news-wrap">Latest</a></li>
-									<li><a class="page-scroll" href="/index.html#stars">Stars</a></li>
-									<li><a class="page-scroll" href="/index.html#comics">Comics</a></li>
-									<li><a class="page-scroll" href="/index.html#why">Why Vidiyo</a></li>
-									<li><a class="page-scroll" href="/index.html#contact">Contact</a></li>
-								</ul>
-							</nav>
+						</div>
+						<div class="guy-details bottom-bar">
+							<div class="container">
+								<div class="row">
+									<div class="left-kaafi col-lg-4 col-sm-4"></div>
+									<div class="kaafi-kuch col-lg-8 col-sm-8">
+										<div class="call-to-action">
+											<!-- <a href="#" class="btn btn-default"> Book {{page.name}} Now</a> -->
+											<button class="btn btn-default" data-toggle="modal" data-target="#myModal"> Request
+												{{page.name}} Now</button>
+										</div>
+										<div class="review">
+			
+											{% assign stars_to_show = 4 | plus: 0 %}
+											{% if page.rating %}
+											{% assign stars_to_show = page.rating | round | plus: 0 %}
+											{% endif %}
+			
+											{% assign stars_to_hide = 5 | minus: stars_to_show %}
+			
+											{% for i in (1..stars_to_show) %}
+											<span class="fa fa-heart checked"></span>
+											{% endfor %}
+											{% for i in (1..stars_to_hide) %}
+											<span class="fa fa-heart"></span>
+											{% endfor %}
+											{{stars_to_show}} Stars
+			
+										</div>
+										<div class="reply-time">
+											Typically responds in 5 days <span class="fa fa-flash"></span>
+										</div>
+			
+										<!-- <div class="tags">
+												<li class="each-tag">Test</li>
+												<li class="each-tag">Test</li>
+											</div> -->
+			
+										<div class="content">
+											{{content | markdownify}}
+										</div>
+									</div>
+								</div>
+							</div>
+			
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
-		<!-- HEADER -->
+			<div class="star-profile-left">
+			</div>
+			
 
-		
+			<!--  -->
+		</div>
 
-		<div class="wrapper">
 
-			<!-- SERVICES -->
-			<div id="services">
-				<div class="container">
-					<div class="row text-center">
-						<div class="col-md-6">
-							<span>
-									<h3><i class="play-diamond top-profile-icon"></i>{{page.name}}<i class="play-diamond top-profile-icon"></i></h3> 
+		<hr class="custom-hr">
 
-							</span>
-							<div class="icon-box">
-								<img src="{{page.image_url}}" alt="{{page.name}} image">
-								<p>{{page.excerpt}}</p>
-							</div>
+		<div id="team-wrap">
+			<div id="comics" class="container">
+				<div class="section-head text-center">
+					<h2>Similar logg...</h2>
+					<h5></h5>
+				</div>
+
+				<div class="row">
+					{% assign comic_stars = site.stars  %}
+					{% for each_comic_star in comic_stars limit:3 %}
+
+					<div class="col-md-4 team-item">
+						<div class="team_member_wrap">
+							<a href="{{each_comic_star.url}}">
+								<div class="team_profile_wrap">
+									<div class="team_profile_pic image-cropper-custom">
+										<img alt="image" src="{{each_comic_star.image_url}}">
+									</div>
+									<div class="team_profile_ttl">
+										<h3>{{each_comic_star.name}}</h3>
+										<h4>{{each_comic_star.excerpt}}</h4>
+									</div>
+								</div>
+							</a>
 						</div>
-						<div class="col-md-6">
-							<div id="profile-ind" class="icon-box">
-								<i class="play-tv2"></i>
-								<!-- <i class="play-vynil"></i> -->
-								<h3>Receive your Celebrity shoutout from {{page.name}}!</h3>
-								
-								<form id="contactForm" method="post">
-									<label>To (required)</label>
-									<input type="text" name="toName" id="toName" Required>
-									<label>From (required)</label>
-									<input type="text" name="senderName" id="senderName" Required>
-									<label>Instructions to {{page.first_name}}:</label>
-									<textarea name="message" id="message"></textarea>
-									<h3>How do we deliver?</h3>
-									<label>Email</label>
-									<input type="email" name="email" id="email">
-									
-									<button class="button large" type="submit">Book now</button>
-								</form>
-							</div>
-						</div>
-
 					</div>
+					{% endfor %}
 				</div>
 			</div>
+		</div>
+		<!-- FOOTER -->
+		{% include footer.html %}
+		<!-- FOOTER -->
 
+	</div>
+	<div class="modal" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
 
-				
-
-			<!-- FOOTER -->
-			<section class="footer">
-				<div class="container">
-					<div class="col-md-3">
-						<div class="widget-content">
-							<h3 class="widget-title">About</h3>
-							<div class="textwidget">
-								<p>We believe in delivering happiness to those who deserve them, and work closely with a
-									variety of charities which believe in changing the world and make it a better place.
-									By using Vidyo, you are contributing to bringing smiles to those who need it.</p>
-								<p class="hidden-xs">&copy; Copyright 2019. Vidiyo. <br>All Rights Reserved.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="widget-content">
-							<h3 class="widget-title">Useful Links</h3>
-							<div class="row">
-								<div class="col-md-6">
-									<ul class="footer-links">
-										<li><a href="#">About</a></li>
-										<li><a href="#">Releases</a></li>
-										<li><a href="#">Tour</a></li>
-										<li><a href="#">Gallery</a></li>
-										<li><a href="#">Team</a></li>
-										<li><a href="#">Portfolio</a></li>
-									</ul>
-								</div>
-								<div class="col-md-6">
-									<ul class="footer-links">
-										<li><a href="#">News</a></li>
-										<li><a href="#">FAQ</a></li>
-										<li><a href="#">Payments</a></li>
-										<li><a href="#">Terms</a></li>
-										<li><a href="#">Privacy</a></li>
-										<li><a href="#">Contact</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<!-- <div class="widget-content">
-							<h3 class="widget-title">Instafeed</h3>
-							<ul class="instafeed">
-								<li><a href="#"><img src="../images/1.jpg" alt="" /></a></li>
-								<li><a href="#"><img src="../images/2.jpg" alt="" /></a></li>
-								<li><a href="#"><img src="../images/3.jpg" alt="" /></a></li>
-								<li><a href="#"><img src="../images/4.jpg" alt="" /></a></li>
-								<li><a href="#"><img src="../images/5.jpg" alt="" /></a></li>
-								<li><a href="#"><img src="../images/6.jpg" alt="" /></a></li>
-							</ul>
-						</div> -->
-					</div>
-					<div class="col-md-3">
-						<div class="widget-content">
-							<h3 class="widget-title">Sign up to our Newsletter</h3>
-							<div class="form mc-form">
-								<form>
-									<input name="EMAIL" placeholder="Your email address" required="" type="email">
-									<button type="submit" class="btn btn-border">Subscribe</button>
-								</form>
-							</div>
-							<br>
-
-							<p class="visible-xs hidden-sm hidden-md hidden-lg text-center">&copy; Copyright 2019.
-								Vidiyo. <br>All Rights Reserved.</p>
-
-						</div>
-					</div>
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Book a Vidiyo - from {{page.name}} </h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
-			</section>
-			<!-- FOOTER -->
 
+				<!-- Modal body -->
+				<div class="modal-body">
+					<form name="book_form" method="post" data-netlify="true">
+						<div class="hidden">
+							<input type="text" name="star" id="star" value="{{page.name}}">
+						</div>
+						<div class="form-group">
+							<label for="to">Vidiyo dedicated to:</label>
+							<input type="text" class="form-control" id="to" placeholder="Karan">
+						</div>
+						<div class="form-group">
+							<label for="from">from: </label>
+							<input type="text" class="form-control" id="from" placeholder="Arjun">
+						</div>
+						<div class="form-group">
+							<label for="instuctions">What would you like {{page.name}} to say: </label>
+							<textarea type="text" rows="2" class="form-control" name="instructions" id="instructions"
+								placeholder="Karan and me (Arjun) are brothers and have met after a long seperation. Please record our message for a mother letting her know we are coming home soon."></textarea>
+						</div>
+						<div class="form-group">
+							<label for="d_email">Deliver to: </label>
+							<input type="email" class="form-control" name="d_email" id="d_email"
+								placeholder="karan@email.com">
+						</div>
+
+						<div class="form-group form-check">
+							<label class="form-check-label">
+								<input class="form-check-input" type="checkbox"> Make this public
+							</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Book {{page.firt_name}} Now</button>
+					</form>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+
+			</div>
 		</div>
 	</div>
+</div>
 
-	<!-- Javascript -->
-	<script src="../js/jquery.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/jquery-ui.min.js"></script>
-	<script src="../js/classie.js"></script>
-	<script src="../js/tweecool.min.js"></script>
-	<script src="../js/jplayer.playlist.min.js"></script>
-	<script src="../js/jquery.jplayer.min.js"></script>
-	<script src="../js/superfish/js/hoverIntent.js"></script>
-	<script src="../js/superfish/js/superfish.js"></script>
-	<script src="../js/menu.js"></script>
-	<script src="../js/stellar.js"></script>
-	<script src="../js/jquery.easing.min.js"></script>
-	<script src="../js/prettyphoto/jquery.prettyPhoto.js"></script>
-	<script src="../js/main.js"></script>
-	<script src="../js/contact.js"></script>
-	<script src="../js/custom.js"></script>
-	<script src="../js/custom-kaaro.js"></script>
-
-</body>
-
-</html>
+<!-- Javascript -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/classie.js"></script>
+<script src="../js/tweecool.min.js"></script>
+<script src="../js/jplayer.playlist.min.js"></script>
+<script src="../js/jquery.jplayer.min.js"></script>
+<script src="../js/superfish/js/hoverIntent.js"></script>
+<script src="../js/superfish/js/superfish.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/stellar.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/prettyphoto/jquery.prettyPhoto.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/contact.js"></script>
+<script src="../js/custom.js"></script>
+<script src="../js/custom-kaaro.js"></script>
+<script src="../js/custom-stars.js"></script>
+<script src="../js/custom-qoute.js"></script>

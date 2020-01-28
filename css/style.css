@@ -38,7 +38,7 @@ Website: http://themeforest.net/themesquared
 body {
     /* font-family: 'Open Sans', sans-serif; */
     list-style: none;
-    background: #eff2fe;
+    background: #11171A;
     overflow: auto !important;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
@@ -97,7 +97,7 @@ iframe {
 /* 2. HEADER */
 
 header {
-    background: #4a5997;
+    background: #11171A;
     position: fixed;
     z-index: 999;
     right: 0;
@@ -491,15 +491,21 @@ header {
 }
 
 .sf-menu>li>a {
-    border-left: medium none;
+    /* border-left: medium none;
     border-top: medium none;
     padding: 15px 10px !important;
     text-decoration: none;
     color: #fff;
-    /* text-transform: uppercase; */
     font-size: 12px;
     font-weight: 400;
-    background: transparent !important;
+    background: transparent !important; */
+    border: none;
+    text-align: left;
+    font: Medium 13px/20px Poppins;
+    letter-spacing: 0;
+    color: #525F65;
+    text-transform: uppercase;
+    opacity: 1;
 }
 
 .sf-menu>li>a:hover {
@@ -561,10 +567,11 @@ header {
 /* 3. INTRO */
 
 #intro {
-    /* background: #04060F no-repeat center center; */
+    background: #11171A no-repeat center center;
     background-size: cover;
-    padding: 100px 0 50px;
+    /* padding: 100px 0 50px; */
     position: relative;
+    height: 100vh;
 }
 
 
@@ -634,11 +641,13 @@ header {
 }
 
 .wrapper {
-    /* background: #fff; */
+    background: #1C262A;
     position: relative;
     z-index: 555;
 
     scroll-snap-type: y mandatory;
+    
+    /* background: ; */
 
 }
 
@@ -780,18 +789,26 @@ input.button:active {
 
 .icon-box h3 {
     margin: 30px 0px 15px;
-    font-weight: 500;
-    font-size: 15px;
+    /* font-weight: 500;
+    font-size: 15px; */
     /* text-transform: uppercase; */
-    letter-spacing: 1.5px;
-    color: #3d55b6;
+    /* letter-spacing: 1.5px; */
+    /* color: #3d55b6; */
+    font: Regular 30px/46px Poppins;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .icon-box p {
-    font-size: 13px;
+    /* font-size: 13px;
     color: #757c97;
-    line-height: 25px;
+    line-height: 25px; */
     margin-bottom: 20px;
+    font: ExtraLight 15px/25px Poppins;
+    letter-spacing: 1.05px;
+    color: #E2E2E2;
+    opacity: 1;
 }
 
 .icon-box a i {
@@ -2703,7 +2720,7 @@ input.button:active {
         padding-top: 0px;
     }
     .logo a img {
-        max-width: 75px;
+        max-width: 65px;
     }
     .sf-menu>li>a {
         padding: 14px 25px;
@@ -2728,14 +2745,19 @@ input.button:active {
     .sf-menu>li {
         margin-top: 0;
     }
-    .sf-menu ul li a {
-        color: #FFF;
+    .sf-menu li a {
+        text-align: left;
+        font: Medium 13px/20px Poppins;
+        letter-spacing: 0;
+        color: #525F65;
+        text-transform: uppercase;
+        opacity: 1;
+        /* color: #FFF;
         font-size: 10px;
         border: medium none;
         padding: 13px 15px;
         background: #111;
-        /* text-transform: uppercase; */
-        border-bottom: 1px solid #272727;
+        border-bottom: 1px solid #272727; */
     }
     .mobnav-subarrow {
         display: block;
@@ -2935,6 +2957,30 @@ box-shadow: 0px 8px 35px -12px rgba(74,89,151,0.59);
     transition: background-color .3s linear, color .3s linear;
 }
 
+.header-image-tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.header-image-tags .fl-container .first-level {
+    text-align: left;
+    font: Bold 6vh Poppins;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 30vw;
+}
+
+.header-image-tags .fl-container .second-level {
+    text-align: left;
+    font: ExtraLight 30px/60px Poppins;
+    letter-spacing: 1.2px;
+    color: #D6D6D6;
+    opacity: 1;
+}
+
+
 .header-image-tags h3 {
     /* font-family: Montserrat, Sans-serif; */
     color: #4a5997;
@@ -2979,6 +3025,9 @@ canvas {
     z-index: 5;
     bottom: 0;
     left: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
     /* background: rgba(255,255,255,0.7); */
 }
 
@@ -2993,6 +3042,23 @@ a-scene {
     top: 0;
     left: 0;
     
+}
+.intro-landing-asset {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.phone-frame{
+    background: #070C0F 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 3px #000000;
+    opacity: 1;
+    width: 359px;
+    height: 60vh;
+}
+
+.phone-frame::after {
+
 }
 
 #center-marker {
